@@ -1,5 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
+var HTMLWebpackPlugin = require('html-webpack-plugin');
+var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
+    template: __dirname + '/index.html',
+    filename: 'index.html',
+    inject: 'body'
+});
 
 module.exports = {
 	entry: [
@@ -30,5 +36,8 @@ module.exports = {
 	output: {
 		path: __dirname + '/dist',
 		filename: 'bundle.js'
-	}
+	},
+	plugins: [
+        HTMLWebpackPluginConfig
+    ]
 }
