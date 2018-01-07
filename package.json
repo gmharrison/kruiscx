@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/gmharrison/kruiscx#readme",
   "dependencies": {
+    "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-svg-loader": "^2.1.0",
