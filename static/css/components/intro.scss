@@ -1,0 +1,31 @@
+.intro {
+  background-image: url('../../../static/img/intro.png');
+  background-size: cover;
+  background-position: center, center;
+}
+
+.centeringHeader {
+  float: none;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 50px;
+  margin: 75px 0 50px 0;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.subHeader {
+  line-height: 2em;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    margin: 50px 0;
+  }
+}

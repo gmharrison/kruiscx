@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAgB;EACd,KAAK,EAAE,OAAO;EACd,OAAO,EAAE,MAAM;EAEf,kBAAG;IACD,WAAW,EAAE,QAAQ;IACrB,cAAc,EAAE,SAAS;IACzB,WAAW,EAAE,IAAI;;AAIrB,cAAe;EACb,OAAO,EAAE,MAAM;;AAGjB,YAAa;EACX,OAAO,EAAE,SAAS;EAClB,UAAU,EAAE,OAAO",
+"sources": ["sponsors.scss"],
+"names": [],
+"file": "sponsors.css"
+}

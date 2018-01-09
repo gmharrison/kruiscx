@@ -1,0 +1,64 @@
+.intro_intro_177Bj {
+  background-image: url(80a310fdf953393c58f0dd6b5dc550a1.png);
+  background-size: cover;
+  background-position: center, center; }
+
+.intro_centeringHeader_ggjti {
+  float: none;
+  margin: 0 auto; }
+
+.intro_header_3Wfbg {
+  padding: 50px;
+  margin: 100px 0 75px 0;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif; }
+
+.intro_subHeader_Y8Nq8 {
+  line-height: 2em;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 0 10px; }
+.nav_nav_2oJf9 {
+  margin: 20px; }
+  .nav_nav_2oJf9 ul {
+    float: right;
+    margin-top: 5px; }
+  .nav_nav_2oJf9 li {
+    display: inline-block;
+    font-family: 'Oswald';
+    color: white;
+    text-transform: uppercase;
+    margin: 0 30px;
+    font-size: 18px; }
+
+.nav_navLogo_1xfJJ {
+  float: left;
+  width: 50px;
+  height: 50px; }
+.about_graySectionHeader_2pi1M {
+  color: #3f464d;
+  padding: 75px 0; }
+  .about_graySectionHeader_2pi1M h2 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: bold; }
+
+.about_graySectionText_Hj7ZJ {
+  margin-top: 15px;
+  line-height: 1.8em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300; }
+.team_team_3ReuT {
+  background-image: url(9d7efa699cb80ffaf2f89a5ccc02ae05.png);
+  background-size: cover;
+  background-position: center, center; }
+
+.team_whiteSectionHeader_1lUjV {
+  color: white;
+  padding: 75px 0; }
+  .team_whiteSectionHeader_1lUjV h2 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: bold; }

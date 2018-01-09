@@ -1,0 +1,14 @@
+.team {
+  background-image: url("../../../static/img/team.png");
+  background-size: cover;
+  background-position: center, center; }
+
+.contentSection {
+  color: white;
+  padding: 75px 0; }
+  .contentSection h2 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: bold; }
+
+/*# sourceMappingURL=team.css.map */

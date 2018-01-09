@@ -1,0 +1,64 @@
+.contact {
+  background-color: #3f464d;
+}
+
+.contentSection{
+  color: white;
+  padding: 75px 0;
+
+  h2 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.contactFormContainer {
+  .contactInput {
+    border-radius: 0;
+    border-bottom: 10px solid #ff57cc;
+    margin-top: 15px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: none;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .name{
+    padding-right: 10px;
+  }
+
+  .formCol {
+    padding: 0;
+  }
+
+  .formColLeft {
+    padding-left: 0;
+  }
+
+  .formColRight{
+    padding-right: 0;
+  }
+
+  .submitButton {
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    color: white;
+    background-color: #ff57cc;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactFormContainer {
+    .formCol, .formColRight, .formColLeft {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.team {
+  background-image: url('../../../static/img/team.png');
+  background-size: cover;
+  background-position: center, center;
+}
+
+.contentSection{
+  color: white;
+  padding: 75px 0;
+
+  h2 {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
