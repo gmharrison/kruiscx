@@ -20,7 +20,6 @@ export default class Team extends React.Component {
             return d.json()
          })
          .then(json => {
-
             // 2. array for storing url's retrieved from response
             var urlArray = []
 
@@ -28,7 +27,6 @@ export default class Team extends React.Component {
                 // 3. Push url inside urlArray
                 urlArray.push(json.data[i].link)
             }
-
             // 4. an array of urls
             return urlArray
          })
@@ -51,23 +49,6 @@ export default class Team extends React.Component {
             }
             this.setState({linkList: newArray})
           })
-        // fetch('https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=6')
-        //     .then(d => d.json())
-        //     .then(json => {
-        //           this.setState({instaData: json.data})
-        //         for (var i=0; i < this.state.instaData.length; i++) {
-        //             let link = this.state.instaData[i].link;
-        //             this.state.linkList.push(link);
-        //         }
-        //         for (var i=0; i < this.state.linkList.length; i++) {
-        //             fetch('https://api.instagram.com/oembed?url=' + this.state.linkList[i])
-        //                 .then(d => d.json())
-        //                 .then(json => {
-        //
-        //                     this.setState({pic2: json.data.html })
-        //                 })
-        //         }
-        // })
     }
 
     componentWillMount () {
@@ -95,13 +76,6 @@ export default class Team extends React.Component {
              </div>
             )
         })
-        // let pictures = this.state.instaData.map((pic) => {
-        //     return (
-        //         <div className={styles.imageContainer}>
-        //             <img src={pic.images.standard_resolution.url} />
-        //         </div>
-        //     )
-        // })
 
         return (
             <div className={styles.team}>
