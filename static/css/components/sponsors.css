@@ -8,9 +8,8 @@
 
 .logoContainer {
   padding: 15px 0; }
-
-.placeholder {
-  padding: 75px 50px;
-  background: #d1d2d3; }
+  .logoContainer img {
+    display: block;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=sponsors.css.map */

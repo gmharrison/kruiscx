@@ -20,6 +20,7 @@ export default class Team extends React.Component {
             return d.json()
          })
          .then(json => {
+
             // 2. array for storing url's retrieved from response
             var urlArray = []
 
@@ -27,10 +28,12 @@ export default class Team extends React.Component {
                 // 3. Push url inside urlArray
                 urlArray.push(json.data[i].link)
             }
+
             // 4. an array of urls
             return urlArray
          })
          .then(urlArray => {
+
             // Return an promise which will return "JSON response" array for all URLs.
             return Promise.all(urlArray.map(url => {
                 // Take url fetch response, return JSON response
@@ -60,7 +63,7 @@ export default class Team extends React.Component {
 
         function instagramEmbbedCheck() {
             if (typeof window.instgrm === 'undefined')
-                setTimeout(instagramEmbbedCheck, 1000);
+                setTimeout(instagramEmbbedCheck, 2000);
             else
                 window.instgrm.Embeds.process();
         }

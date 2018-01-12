@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from '../static/css/components/sponsors.scss'
+import Sids from '../static/img/sids.png'
+import Ridge from '../static/img/ridgesupply.png'
+import Verge from '../static/img/verge.png'
+import Coalition from '../static/img/coalition.png'
 
 
 export default class Sponsors extends React.Component {
@@ -13,14 +17,19 @@ export default class Sponsors extends React.Component {
                                 <h2>Sponsors</h2>
                                 <div className={styles.logoContainer}>
                                     <div className="row">
-                                        <div className="col-md-4">
-                                            <div className={styles.placeholder} />
+                                        <div className="col-md-6">
+                                            <img src={Sids} />
                                         </div>
-                                        <div className="col-md-4">
-                                            <div className={styles.placeholder} />
+                                        <div className="col-md-6">
+                                            <img src={Ridge} />
                                         </div>
-                                        <div className="col-md-4">
-                                            <div className={styles.placeholder} />
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <img src={Verge} />
+                                        </div>
+                                        <div className="col-md-6">
+                                            <img src={Coalition} />
                                         </div>
                                     </div>
                                 </div>
