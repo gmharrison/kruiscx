@@ -18747,12 +18747,33 @@ var Team = function (_React$Component) {
     function Team() {
         _classCallCheck(this, Team);
 
-        return _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this));
+
+        _this.state = {};
+
+        return _this;
     }
 
     _createClass(Team, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
+
+            // fetch('https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d')
+            fetch('https://api.github.com/users/gmharrison').then(function (d) {
+                return d.json();
+            }).then(function (d) {
+                _this2.setState({ instaData: d });
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
+            if (!this.state.instaData) return _react2.default.createElement(
+                'p',
+                null,
+                'loading'
+            );
             return _react2.default.createElement(
                 'div',
                 { className: _team2.default.team },
@@ -18772,7 +18793,8 @@ var Team = function (_React$Component) {
                                     'h2',
                                     null,
                                     'Team'
-                                )
+                                ),
+                                this.state.instaData.name
                             )
                         )
                     )

@@ -14,3 +14,21 @@
     font-weight: bold;
   }
 }
+
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+  .imageContainer {
+    flex: 0 0 30%;
+    margin: 10px;
+
+    img {
+      width: 100%;
+    }
+
+    p{
+
+    }
+  }
+}
