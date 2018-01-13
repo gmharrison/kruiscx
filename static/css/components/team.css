@@ -13,11 +13,27 @@
 
 .galleryContainer {
   display: flex;
-  flex-wrap: wrap; }
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-left: 1em; }
   .galleryContainer .imageContainer {
-    flex: 0 0 30%;
-    margin: 10px; }
-    .galleryContainer .imageContainer img {
-      width: 100%; }
+    flex: 0 0 100%;
+    margin: 10px;
+    padding-left: 1em; }
+
+.galleryContainer::before, .container::after {
+  content: '';
+  width: 100%;
+  order: 1; }
+
+.imageContainer:nth-child(n + 3) {
+  order: 1; }
+
+.imageContainer:nth-child(n + 6) {
+  order: 2; }
+
+@media (min-width: 48em) {
+  .galleryContainer > .imageContainer {
+    flex: 1; } }
 
 /*# sourceMappingURL=team.css.map */

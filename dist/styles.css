@@ -78,12 +78,28 @@
 
 .team_galleryContainer_2Y3gW {
   display: flex;
-  flex-wrap: wrap; }
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-left: 1em; }
   .team_galleryContainer_2Y3gW .team_imageContainer_5TCOJ {
-    flex: 0 0 30%;
-    margin: 10px; }
-    .team_galleryContainer_2Y3gW .team_imageContainer_5TCOJ img {
-      width: 100%; }
+    flex: 0 0 100%;
+    margin: 10px;
+    padding-left: 1em; }
+
+.team_galleryContainer_2Y3gW::before, .team_container_1fQS9::after {
+  content: '';
+  width: 100%;
+  order: 1; }
+
+.team_imageContainer_5TCOJ:nth-child(n + 3) {
+  order: 1; }
+
+.team_imageContainer_5TCOJ:nth-child(n + 6) {
+  order: 2; }
+
+@media (min-width: 48em) {
+  .team_galleryContainer_2Y3gW > .team_imageContainer_5TCOJ {
+    flex: 1; } }
 .sponsors_contentSection_27i5x {
   color: #3f464d;
   padding: 75px 0; }

@@ -17,18 +17,18 @@ export default class Sponsors extends React.Component {
                                 <h2>Sponsors</h2>
                                 <div className={styles.logoContainer}>
                                     <div className="row">
-                                        <div className="col-md-6">
+                                        <div className="col-md-6 col-sm-12">
                                             <img src={Sids} />
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-6 col-sm-12">
                                             <img src={Ridge} />
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-md-6">
+                                        <div className="col-md-6 col-sm-12">
                                             <img src={Verge} />
                                         </div>
-                                        <div className="col-md-6">
+                                        <div className="col-md-6 col-sm-12">
                                             <img src={Coalition} />
                                         </div>
                                     </div>

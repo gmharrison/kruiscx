@@ -15,7 +15,7 @@ export default class Team extends React.Component {
 
     componentDidMount() {
         // 1. Outer Fetch call initiated here
-        fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=6")
+        fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=4")
          .then(d => {
             return d.json()
          })

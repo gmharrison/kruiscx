@@ -18764,7 +18764,7 @@ var Team = function (_React$Component) {
             var _this2 = this;
 
             // 1. Outer Fetch call initiated here
-            fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=6").then(function (d) {
+            fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=4").then(function (d) {
                 return d.json();
             }).then(function (json) {
 
@@ -18871,7 +18871,7 @@ exports.default = Team;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA","galleryContainer":"team_galleryContainer_2Y3gW","imageContainer":"team_imageContainer_5TCOJ"};
+module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA","galleryContainer":"team_galleryContainer_2Y3gW","imageContainer":"team_imageContainer_5TCOJ","container":"team_container_1fQS9"};
 
 /***/ }),
 /* 39 */
@@ -18958,12 +18958,12 @@ var Sponsors = function (_React$Component) {
                                         { className: 'row' },
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-6' },
+                                            { className: 'col-md-6 col-sm-12' },
                                             _react2.default.createElement('img', { src: _sids2.default })
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-6' },
+                                            { className: 'col-md-6 col-sm-12' },
                                             _react2.default.createElement('img', { src: _ridgesupply2.default })
                                         )
                                     ),
@@ -18972,12 +18972,12 @@ var Sponsors = function (_React$Component) {
                                         { className: 'row' },
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-6' },
+                                            { className: 'col-md-6 col-sm-12' },
                                             _react2.default.createElement('img', { src: _verge2.default })
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-6' },
+                                            { className: 'col-md-6 col-sm-12' },
                                             _react2.default.createElement('img', { src: _coalition2.default })
                                         )
                                     )
