@@ -19,7 +19,6 @@ export default class Sponsors extends React.Component {
                                     <div className="row">
                                         <div className="col-md-6">
                                             <img src={Sids} />
-                                            test
                                         </div>
                                         <div className="col-md-6">
                                             <img src={Ridge} />

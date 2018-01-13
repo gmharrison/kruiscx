@@ -18304,11 +18304,11 @@ var _sponsors = __webpack_require__(39);
 
 var _sponsors2 = _interopRequireDefault(_sponsors);
 
-var _contact = __webpack_require__(41);
+var _contact = __webpack_require__(45);
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _footer = __webpack_require__(43);
+var _footer = __webpack_require__(47);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -18744,12 +18744,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Team = function (_React$Component) {
     _inherits(Team, _React$Component);
 
-    function Team() {
+    function Team(props) {
         _classCallCheck(this, Team);
 
-        var _this = _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this));
+        var _this = _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this, props));
 
-        _this.state = {};
+        _this.state = {
+            instaData: [],
+            linkList: [],
+            pic2: []
+        };
 
         return _this;
     }
@@ -18759,12 +18763,54 @@ var Team = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            // fetch('https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d')
-            fetch('https://api.github.com/users/gmharrison').then(function (d) {
+            // 1. Outer Fetch call initiated here
+            fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=6").then(function (d) {
                 return d.json();
-            }).then(function (d) {
-                _this2.setState({ instaData: d });
+            }).then(function (json) {
+
+                // 2. array for storing url's retrieved from response
+                var urlArray = [];
+
+                for (var i = 0; i < json.data.length; i++) {
+                    // 3. Push url inside urlArray
+                    urlArray.push(json.data[i].link);
+                }
+
+                // 4. an array of urls
+                return urlArray;
+            }).then(function (urlArray) {
+
+                // Return an promise which will return "JSON response" array for all URLs.
+                return Promise.all(urlArray.map(function (url) {
+                    // Take url fetch response, return JSON response
+                    return fetch('https://api.instagram.com/oembed?url=' + url).then(function (f) {
+                        return f.json();
+                    });
+                }));
+            }).then(function (f) {
+                // Store all objects into array for later use
+                var objArr = f;
+                var newArray = [];
+                for (var i = 0; i < objArr.length; i++) {
+                    var html = objArr[i];
+                    newArray.push(html);
+                }
+                _this2.setState({ linkList: newArray });
             });
+        }
+    }, {
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            var script = document.createElement("script");
+            script.src = "http://platform.instagram.com/en_US/embeds.js";
+            script.async = true;
+
+            document.body.appendChild(script);
+
+            function instagramEmbbedCheck() {
+                if (typeof window.instgrm === 'undefined') setTimeout(instagramEmbbedCheck, 2000);else window.instgrm.Embeds.process();
+            }
+            instagramEmbbedCheck();
         }
     }, {
         key: 'render',
@@ -18774,6 +18820,14 @@ var Team = function (_React$Component) {
                 null,
                 'loading'
             );
+            var pictures = this.state.linkList.map(function (pic) {
+                return _react2.default.createElement(
+                    'div',
+                    { className: _team2.default.imageContainer },
+                    _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: pic.html } })
+                );
+            });
+
             return _react2.default.createElement(
                 'div',
                 { className: _team2.default.team },
@@ -18794,7 +18848,11 @@ var Team = function (_React$Component) {
                                     null,
                                     'Team'
                                 ),
-                                this.state.instaData.name
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: _team2.default.galleryContainer },
+                                    pictures
+                                )
                             )
                         )
                     )
@@ -18813,7 +18871,7 @@ exports.default = Team;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA"};
+module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA","galleryContainer":"team_galleryContainer_2Y3gW","imageContainer":"team_imageContainer_5TCOJ"};
 
 /***/ }),
 /* 39 */
@@ -18835,6 +18893,22 @@ var _react2 = _interopRequireDefault(_react);
 var _sponsors = __webpack_require__(40);
 
 var _sponsors2 = _interopRequireDefault(_sponsors);
+
+var _sids = __webpack_require__(41);
+
+var _sids2 = _interopRequireDefault(_sids);
+
+var _ridgesupply = __webpack_require__(42);
+
+var _ridgesupply2 = _interopRequireDefault(_ridgesupply);
+
+var _verge = __webpack_require__(43);
+
+var _verge2 = _interopRequireDefault(_verge);
+
+var _coalition = __webpack_require__(44);
+
+var _coalition2 = _interopRequireDefault(_coalition);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18884,18 +18958,27 @@ var Sponsors = function (_React$Component) {
                                         { className: 'row' },
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-4' },
-                                            _react2.default.createElement('div', { className: _sponsors2.default.placeholder })
+                                            { className: 'col-md-6' },
+                                            _react2.default.createElement('img', { src: _sids2.default })
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-4' },
-                                            _react2.default.createElement('div', { className: _sponsors2.default.placeholder })
+                                            { className: 'col-md-6' },
+                                            _react2.default.createElement('img', { src: _ridgesupply2.default })
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: 'row' },
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: 'col-md-6' },
+                                            _react2.default.createElement('img', { src: _verge2.default })
                                         ),
                                         _react2.default.createElement(
                                             'div',
-                                            { className: 'col-md-4' },
-                                            _react2.default.createElement('div', { className: _sponsors2.default.placeholder })
+                                            { className: 'col-md-6' },
+                                            _react2.default.createElement('img', { src: _coalition2.default })
                                         )
                                     )
                                 )
@@ -18917,10 +19000,34 @@ exports.default = Sponsors;
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contentSection":"sponsors_contentSection_27i5x","logoContainer":"sponsors_logoContainer_21Pxu","placeholder":"sponsors_placeholder_19Ixw"};
+module.exports = {"contentSection":"sponsors_contentSection_27i5x","logoContainer":"sponsors_logoContainer_21Pxu"};
 
 /***/ }),
 /* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4b1234e139fbb0879ea0a6893bb39f94.png";
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "4e88cb8fb34ced3cf3af4ec3b085372c.png";
+
+/***/ }),
+/* 43 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "8c9b4d1c92205cec0b2af97661ce8810.png";
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "0d07e9d8c47da98f966cec2f511e3e2f.png";
+
+/***/ }),
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18936,7 +19043,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _contact = __webpack_require__(42);
+var _contact = __webpack_require__(46);
 
 var _contact2 = _interopRequireDefault(_contact);
 
@@ -19027,14 +19134,14 @@ var Contact = function (_React$Component) {
 exports.default = Contact;
 
 /***/ }),
-/* 42 */
+/* 46 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"contact":"contact_contact_1qMK2","contentSection":"contact_contentSection_1-uiA","contactFormContainer":"contact_contactFormContainer_3DAcE","contactInput":"contact_contactInput_Te3Sr","name":"contact_name_2DYPN","formCol":"contact_formCol_3d7x1","formColLeft":"contact_formColLeft_1CSmG","formColRight":"contact_formColRight_19Qa-","submitButton":"contact_submitButton_2DbGS"};
 
 /***/ }),
-/* 43 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19050,7 +19157,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _footer = __webpack_require__(44);
+var _footer = __webpack_require__(48);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -19113,7 +19220,7 @@ var Footer = function (_React$Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 44 */
+/* 48 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

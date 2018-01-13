@@ -75,6 +75,15 @@
     font-family: 'Oswald';
     text-transform: uppercase;
     font-weight: bold; }
+
+.team_galleryContainer_2Y3gW {
+  display: flex;
+  flex-wrap: wrap; }
+  .team_galleryContainer_2Y3gW .team_imageContainer_5TCOJ {
+    flex: 0 0 30%;
+    margin: 10px; }
+    .team_galleryContainer_2Y3gW .team_imageContainer_5TCOJ img {
+      width: 100%; }
 .sponsors_contentSection_27i5x {
   color: #3f464d;
   padding: 75px 0; }
@@ -85,10 +94,9 @@
 
 .sponsors_logoContainer_21Pxu {
   padding: 15px 0; }
-
-.sponsors_placeholder_19Ixw {
-  padding: 75px 50px;
-  background: #d1d2d3; }
+  .sponsors_logoContainer_21Pxu img {
+    display: block;
+    margin: 0 auto; }
 .contact_contact_1qMK2 {
   background-color: #3f464d; }
 
