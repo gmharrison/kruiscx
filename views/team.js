@@ -52,6 +52,7 @@ export default class Team extends React.Component {
             }
             this.setState({linkList: newArray})
           })
+
     }
 
     componentWillMount () {
