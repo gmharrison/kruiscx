@@ -7,9 +7,18 @@
     font-weight: bold; }
 
 .logoContainer {
-  padding: 15px 0; }
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .logoContainer .logo {
+    display: inline-block;
+    flex-grow: 1;
+    margin: 0 10px; }
   .logoContainer img {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 200px; }
 
 /*# sourceMappingURL=sponsors.css.map */

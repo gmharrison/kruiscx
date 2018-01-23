@@ -12,6 +12,14 @@
     text-transform: uppercase;
     margin: 0 30px;
     font-size: 18px;
+
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 

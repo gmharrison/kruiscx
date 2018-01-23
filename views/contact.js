@@ -5,7 +5,7 @@ import styles from '../static/css/components/contact.scss'
 export default class Contact extends React.Component {
     render() {
         return (
-            <div className={styles.contact}>
+            <div id="contact" className={styles.contact}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">

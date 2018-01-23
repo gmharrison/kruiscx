@@ -1,95 +1,95 @@
 import React from 'react';
 import styles from '../static/css/components/team.scss'
 
-
-export default class Team extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            instaData: [],
-            linkList: [],
-            pic2: []
-        };
-
+const teamImages = [
+    {
+        id: 1,
+        path: "andrew_b",
+        name: "Andrew Bennett"
+    }, {
+        id: 2,
+        path: "brian_s",
+        name: "Brian Stan"
+    }, {
+        id: 3,
+        path: "chriska_w",
+        name: "Chriska Wong"
+    }, {
+        id: 4,
+        path: "evan_b",
+        name: "Evan Bauer"
+    }, {
+        id: 5,
+        path: "gabriel_h",
+        name: "Gabriel Harris"
+    }, {
+        id: 6,
+        path: "josh_r",
+        name: "Joshua Renick"
+    }, {
+        id: 7,
+        path: "butter_man",
+        name: "Joshua Thiel"
+    }, {
+        id: 8,
+        path: "bae",
+        name: "Kevin Hsieh"
+    }, {
+        id: 9,
+        path: "kimmy_o",
+        name: "Kimmy O'Conner"
+    }, {
+        id: 10,
+        path: "lisa_h",
+        name: "Lisa Hom"
+    }, {
+        id: 11,
+        path: "lloyd_b",
+        name: "Lloyd Bradbury"
+    }, {
+        id: 12,
+        path: "matt_h",
+        name: "Matt Hartsough"
+    }, {
+        id: 13,
+        path: "matt_s",
+        name: "Matt Story"
+    }, {
+        id: 14,
+        path: "phil_s",
+        name: "Phil Sturgeon"
+    }, {
+        id: 16,
+        path: "tun_k",
+        name: "Tun Khine"
+    }, {
+        id: 17,
+        path: "vlad_r",
+        name: "Vladimir Rabinovich"
     }
+]
 
-    componentDidMount() {
-        // 1. Outer Fetch call initiated here
-        fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=4")
-         .then(d => {
-            return d.json()
-         })
-         .then(json => {
-
-            // 2. array for storing url's retrieved from response
-            var urlArray = []
-
-            for (var i=0; i < json.data.length; i++) {
-                // 3. Push url inside urlArray
-                urlArray.push(json.data[i].link)
-            }
-
-            // 4. an array of urls
-            return urlArray
-         })
-         .then(urlArray => {
-
-            // Return an promise which will return "JSON response" array for all URLs.
-            return Promise.all(urlArray.map(url => {
-                // Take url fetch response, return JSON response
-                return fetch('https://api.instagram.com/oembed?url=' + url)
-                    .then(f => { return f.json() })
-            }
-            ))
-         })
-         .then(f => {
-            // Store all objects into array for later use
-            var objArr = f;
-            var newArray = [];
-            for (var i=0; i < objArr.length; i++) {
-                var html = objArr[i]
-                newArray.push(html)
-            }
-            this.setState({linkList: newArray})
-          })
-
-    }
-
-    componentWillMount () {
-        const script = document.createElement("script");
-        script.src = "https://platform.instagram.com/en_US/embeds.js";
-        script.async = true;
-
-        document.body.appendChild(script);
-
-        function instagramEmbbedCheck() {
-            if (typeof window.instgrm === 'undefined')
-                setTimeout(instagramEmbbedCheck, 2000);
-            else
-                window.instgrm.Embeds.process();
-        }
-        instagramEmbbedCheck();
-    }
-
-    render() {
-        if (!this.state.instaData) return <p>loading</p>
-        let pictures = this.state.linkList.map((pic) => {
+export default class TeamGallery extends React.Component {
+    render (){
+        let profileBlock = teamImages.map((profile) => {
             return (
-            <div className={styles.imageContainer}>
-                 <div dangerouslySetInnerHTML={{__html: pic.html}} />
-             </div>
+                <div key={profile.id} className={styles.teamMember}>
+                    <div key={profile.id} className={styles.circle}>
+                        <img key={profile.id} src={require(`../static/img/${profile.path}.png`)} />
+                    </div>
+                    <p>{profile.name}</p>
+                </div>
             )
         })
-
         return (
-            <div className={styles.team}>
+            <div id="team" className={styles.team}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                             <div className={styles.contentSection}>
                                 <h2>Team</h2>
-                                <div className={styles.galleryContainer}>
-                                    {pictures}
+                                <div className={styles.teamContainer}>
+                                    {profileBlock}
                                 </div>
                             </div>
                         </div>

@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import Intro from './intro'
 import About from "./about";
-import Team from "./team";
+import Social from "./social";
 import Sponsors from "./sponsors";
 import Contact from "./contact";
 import Footer from "./footer";
+import TeamGallery from "./team";
 
 export default class App extends Component {
     render () {
@@ -12,7 +13,8 @@ export default class App extends Component {
             <div>
                 <Intro />
                 <About/>
-                <Team/>
+                <TeamGallery/>
+                <Social/>
                 <Sponsors/>
                 <Contact/>
                 <Footer/>

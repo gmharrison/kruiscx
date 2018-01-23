@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 14);
+/******/ 	return __webpack_require__(__webpack_require__.s = 18);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(16);
+  module.exports = __webpack_require__(20);
 } else {
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(21);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -577,7 +577,7 @@ module.exports = warning;
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(5);
   var warning = __webpack_require__(6);
-  var ReactPropTypesSecret = __webpack_require__(18);
+  var ReactPropTypesSecret = __webpack_require__(22);
   var loggedTypeFailures = {};
 }
 
@@ -876,7 +876,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(21);
+var isTextNode = __webpack_require__(25);
 
 /*eslint-disable no-bitwise */
 
@@ -937,11 +937,35 @@ module.exports = focusNode;
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(15);
-
+module.exports = __webpack_require__.p + "97d37e4ab8a51e79dc49fee07f20be5e.png";
 
 /***/ }),
 /* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a93ee82e9405235c42df5a88389fba37.png";
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "a1db2cb3738c9f49ca05d11cebf1f83d.png";
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "13b0217f8e936d999eca5711611c797e.png";
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(19);
+
+
+/***/ }),
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -951,11 +975,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(19);
+var _reactDom = __webpack_require__(23);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _App = __webpack_require__(28);
+var _App = __webpack_require__(32);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -964,7 +988,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
 
 /***/ }),
-/* 16 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -992,7 +1016,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 17 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2357,7 +2381,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 18 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2376,7 +2400,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 19 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2414,15 +2438,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(20);
+  module.exports = __webpack_require__(24);
 } else {
-  module.exports = __webpack_require__(23);
+  module.exports = __webpack_require__(27);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 20 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2658,7 +2682,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 21 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2673,7 +2697,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(22);
+var isNode = __webpack_require__(26);
 
 /**
  * @param {*} object The object to check.
@@ -2686,7 +2710,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 22 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2714,7 +2738,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 23 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2748,8 +2772,8 @@ var containsNode = __webpack_require__(12);
 var focusNode = __webpack_require__(13);
 var emptyObject = __webpack_require__(4);
 var checkPropTypes = __webpack_require__(7);
-var hyphenateStyleName = __webpack_require__(24);
-var camelizeStyleName = __webpack_require__(26);
+var hyphenateStyleName = __webpack_require__(28);
+var camelizeStyleName = __webpack_require__(30);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -18116,7 +18140,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 24 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18131,7 +18155,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(25);
+var hyphenate = __webpack_require__(29);
 
 var msPattern = /^ms-/;
 
@@ -18158,7 +18182,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 25 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18194,7 +18218,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 26 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18209,7 +18233,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(27);
+var camelize = __webpack_require__(31);
 
 var msPattern = /^-ms-/;
 
@@ -18237,7 +18261,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 27 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18272,7 +18296,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 28 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18288,29 +18312,33 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _intro = __webpack_require__(29);
+var _intro = __webpack_require__(33);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _about = __webpack_require__(35);
+var _about = __webpack_require__(40);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _team = __webpack_require__(37);
+var _social = __webpack_require__(42);
 
-var _team2 = _interopRequireDefault(_team);
+var _social2 = _interopRequireDefault(_social);
 
-var _sponsors = __webpack_require__(39);
+var _sponsors = __webpack_require__(45);
 
 var _sponsors2 = _interopRequireDefault(_sponsors);
 
-var _contact = __webpack_require__(45);
+var _contact = __webpack_require__(47);
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _footer = __webpack_require__(47);
+var _footer = __webpack_require__(49);
 
 var _footer2 = _interopRequireDefault(_footer);
+
+var _team = __webpack_require__(52);
+
+var _team2 = _interopRequireDefault(_team);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18338,6 +18366,7 @@ var App = function (_Component) {
                 _react2.default.createElement(_intro2.default, null),
                 _react2.default.createElement(_about2.default, null),
                 _react2.default.createElement(_team2.default, null),
+                _react2.default.createElement(_social2.default, null),
                 _react2.default.createElement(_sponsors2.default, null),
                 _react2.default.createElement(_contact2.default, null),
                 _react2.default.createElement(_footer2.default, null)
@@ -18351,7 +18380,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 29 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18367,15 +18396,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _logo = __webpack_require__(30);
+var _logo = __webpack_require__(34);
 
 var _logo2 = _interopRequireDefault(_logo);
 
-var _intro = __webpack_require__(31);
+var _intro = __webpack_require__(35);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _nav = __webpack_require__(32);
+var _nav = __webpack_require__(37);
 
 var _nav2 = _interopRequireDefault(_nav);
 
@@ -18435,7 +18464,7 @@ var Intro = function (_React$Component) {
 exports.default = Intro;
 
 /***/ }),
-/* 30 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18481,14 +18510,20 @@ exports.default = function (_ref) {
 };
 
 /***/ }),
-/* 31 */
+/* 35 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"intro":"intro_intro_177Bj","centeringHeader":"intro_centeringHeader_ggjti","header":"intro_header_3Wfbg","subHeader":"intro_subHeader_Y8Nq8"};
 
 /***/ }),
-/* 32 */
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "80a310fdf953393c58f0dd6b5dc550a1.png";
+
+/***/ }),
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18504,11 +18539,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _nav = __webpack_require__(33);
+var _nav = __webpack_require__(38);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _navLogo = __webpack_require__(34);
+var _navLogo = __webpack_require__(39);
 
 var _navLogo2 = _interopRequireDefault(_navLogo);
 
@@ -18546,22 +18581,38 @@ var Nav = function (_React$Component) {
                     _react2.default.createElement(
                         'li',
                         null,
-                        'About'
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#about' },
+                            'About'
+                        )
                     ),
                     _react2.default.createElement(
                         'li',
                         null,
-                        'Team'
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#team' },
+                            'Team'
+                        )
                     ),
                     _react2.default.createElement(
                         'li',
                         null,
-                        'Sponsors'
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#sponsors' },
+                            'Sponsors'
+                        )
                     ),
                     _react2.default.createElement(
                         'li',
                         null,
-                        'Contact'
+                        _react2.default.createElement(
+                            'a',
+                            { href: '#contact' },
+                            'Contact'
+                        )
                     )
                 )
             );
@@ -18574,14 +18625,14 @@ var Nav = function (_React$Component) {
 exports.default = Nav;
 
 /***/ }),
-/* 33 */
+/* 38 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"nav":"nav_nav_2oJf9","navLogo":"nav_navLogo_1xfJJ"};
 
 /***/ }),
-/* 34 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18627,7 +18678,7 @@ exports.default = function (_ref) {
 };
 
 /***/ }),
-/* 35 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18643,7 +18694,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _about = __webpack_require__(36);
+var _about = __webpack_require__(41);
 
 var _about2 = _interopRequireDefault(_about);
 
@@ -18669,7 +18720,7 @@ var About = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
+                { id: 'about' },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -18706,14 +18757,14 @@ var About = function (_React$Component) {
 exports.default = About;
 
 /***/ }),
-/* 36 */
+/* 41 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"contentSection":"about_contentSection_11zXH","graySectionText":"about_graySectionText_Hj7ZJ"};
 
 /***/ }),
-/* 37 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18729,9 +18780,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _team = __webpack_require__(38);
+var _social = __webpack_require__(43);
 
-var _team2 = _interopRequireDefault(_team);
+var _social2 = _interopRequireDefault(_social);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18741,13 +18792,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Team = function (_React$Component) {
-    _inherits(Team, _React$Component);
+var Social = function (_React$Component) {
+    _inherits(Social, _React$Component);
 
-    function Team(props) {
-        _classCallCheck(this, Team);
+    function Social(props) {
+        _classCallCheck(this, Social);
 
-        var _this = _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Social.__proto__ || Object.getPrototypeOf(Social)).call(this, props));
 
         _this.state = {
             instaData: [],
@@ -18758,7 +18809,7 @@ var Team = function (_React$Component) {
         return _this;
     }
 
-    _createClass(Team, [{
+    _createClass(Social, [{
         key: 'componentDidMount',
         value: function componentDidMount() {
             var _this2 = this;
@@ -18823,14 +18874,14 @@ var Team = function (_React$Component) {
             var pictures = this.state.linkList.map(function (pic) {
                 return _react2.default.createElement(
                     'div',
-                    { className: _team2.default.imageContainer },
+                    { className: _social2.default.imageContainer },
                     _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: pic.html } })
                 );
             });
 
             return _react2.default.createElement(
                 'div',
-                { className: _team2.default.team },
+                { className: _social2.default.team },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -18842,15 +18893,10 @@ var Team = function (_React$Component) {
                             { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
                             _react2.default.createElement(
                                 'div',
-                                { className: _team2.default.contentSection },
-                                _react2.default.createElement(
-                                    'h2',
-                                    null,
-                                    'Team'
-                                ),
+                                { className: _social2.default.contentSection },
                                 _react2.default.createElement(
                                     'div',
-                                    { className: _team2.default.galleryContainer },
+                                    { className: _social2.default.galleryContainer },
                                     pictures
                                 )
                             )
@@ -18861,20 +18907,26 @@ var Team = function (_React$Component) {
         }
     }]);
 
-    return Team;
+    return Social;
 }(_react2.default.Component);
 
-exports.default = Team;
+exports.default = Social;
 
 /***/ }),
-/* 38 */
+/* 43 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA","galleryContainer":"team_galleryContainer_2Y3gW","imageContainer":"team_imageContainer_5TCOJ","container":"team_container_1fQS9"};
+module.exports = {"team":"social_team_jxxr2","contentSection":"social_contentSection_1WBut","galleryContainer":"social_galleryContainer_fxAGI","imageContainer":"social_imageContainer_3k0ew","container":"social_container_2lXOD"};
 
 /***/ }),
-/* 39 */
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "9d7efa699cb80ffaf2f89a5ccc02ae05.png";
+
+/***/ }),
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18890,23 +18942,23 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _sponsors = __webpack_require__(40);
+var _sponsors = __webpack_require__(46);
 
 var _sponsors2 = _interopRequireDefault(_sponsors);
 
-var _sids = __webpack_require__(41);
+var _sids = __webpack_require__(14);
 
 var _sids2 = _interopRequireDefault(_sids);
 
-var _ridgesupply = __webpack_require__(42);
+var _ridgesupply = __webpack_require__(15);
 
 var _ridgesupply2 = _interopRequireDefault(_ridgesupply);
 
-var _verge = __webpack_require__(43);
+var _verge = __webpack_require__(16);
 
 var _verge2 = _interopRequireDefault(_verge);
 
-var _coalition = __webpack_require__(44);
+var _coalition = __webpack_require__(17);
 
 var _coalition2 = _interopRequireDefault(_coalition);
 
@@ -18932,7 +18984,7 @@ var Sponsors = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
+                { id: 'sponsors' },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -18955,29 +19007,37 @@ var Sponsors = function (_React$Component) {
                                     { className: _sponsors2.default.logoContainer },
                                     _react2.default.createElement(
                                         'div',
-                                        { className: 'row' },
+                                        { className: _sponsors2.default.logo },
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'col-md-6 col-sm-12' },
+                                            'a',
+                                            { href: 'https://www.sidsbikes.com/', target: '_blank' },
                                             _react2.default.createElement('img', { src: _sids2.default })
-                                        ),
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: _sponsors2.default.logo },
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'col-md-6 col-sm-12' },
+                                            'a',
+                                            { href: 'https://ridgesupplysocks.com' },
                                             _react2.default.createElement('img', { src: _ridgesupply2.default })
                                         )
                                     ),
                                     _react2.default.createElement(
                                         'div',
-                                        { className: 'row' },
+                                        { className: _sponsors2.default.logo },
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'col-md-6 col-sm-12' },
+                                            'a',
+                                            { href: 'https://www.vergesport.com/', target: '_blank' },
                                             _react2.default.createElement('img', { src: _verge2.default })
-                                        ),
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: _sponsors2.default.logo },
                                         _react2.default.createElement(
-                                            'div',
-                                            { className: 'col-md-6 col-sm-12' },
+                                            'a',
+                                            { href: 'https://www.instagram.com/coalitioncyclingclub/', target: '_blank' },
                                             _react2.default.createElement('img', { src: _coalition2.default })
                                         )
                                     )
@@ -18996,38 +19056,14 @@ var Sponsors = function (_React$Component) {
 exports.default = Sponsors;
 
 /***/ }),
-/* 40 */
+/* 46 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contentSection":"sponsors_contentSection_27i5x","logoContainer":"sponsors_logoContainer_21Pxu"};
+module.exports = {"contentSection":"sponsors_contentSection_27i5x","logoContainer":"sponsors_logoContainer_21Pxu","logo":"sponsors_logo_1pmeZ"};
 
 /***/ }),
-/* 41 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "4b1234e139fbb0879ea0a6893bb39f94.png";
-
-/***/ }),
-/* 42 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "4e88cb8fb34ced3cf3af4ec3b085372c.png";
-
-/***/ }),
-/* 43 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "8c9b4d1c92205cec0b2af97661ce8810.png";
-
-/***/ }),
-/* 44 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "0d07e9d8c47da98f966cec2f511e3e2f.png";
-
-/***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19043,7 +19079,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _contact = __webpack_require__(46);
+var _contact = __webpack_require__(48);
 
 var _contact2 = _interopRequireDefault(_contact);
 
@@ -19069,7 +19105,7 @@ var Contact = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: _contact2.default.contact },
+                { id: 'contact', className: _contact2.default.contact },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -19134,14 +19170,14 @@ var Contact = function (_React$Component) {
 exports.default = Contact;
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"contact":"contact_contact_1qMK2","contentSection":"contact_contentSection_1-uiA","contactFormContainer":"contact_contactFormContainer_3DAcE","contactInput":"contact_contactInput_Te3Sr","name":"contact_name_2DYPN","formCol":"contact_formCol_3d7x1","formColLeft":"contact_formColLeft_1CSmG","formColRight":"contact_formColRight_19Qa-","submitButton":"contact_submitButton_2DbGS"};
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19157,7 +19193,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _footer = __webpack_require__(48);
+var _footer = __webpack_require__(50);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -19220,11 +19256,338 @@ var Footer = function (_React$Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"footer":"footer_footer_zGyJk","socialLinks":"footer_socialLinks_22tx6"};
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "476f713db1db57d2f44c9876f52e5809.png";
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _team = __webpack_require__(53);
+
+var _team2 = _interopRequireDefault(_team);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var teamImages = [{
+    id: 1,
+    path: "andrew_b",
+    name: "Andrew Bennett"
+}, {
+    id: 2,
+    path: "brian_s",
+    name: "Brian Stan"
+}, {
+    id: 3,
+    path: "chriska_w",
+    name: "Chriska Wong"
+}, {
+    id: 4,
+    path: "evan_b",
+    name: "Evan Bauer"
+}, {
+    id: 5,
+    path: "gabriel_h",
+    name: "Gabriel Harris"
+}, {
+    id: 6,
+    path: "josh_r",
+    name: "Joshua Renick"
+}, {
+    id: 7,
+    path: "butter_man",
+    name: "Joshua Thiel"
+}, {
+    id: 8,
+    path: "bae",
+    name: "Kevin Hsieh"
+}, {
+    id: 9,
+    path: "kimmy_o",
+    name: "Kimmy O'Conner"
+}, {
+    id: 10,
+    path: "lisa_h",
+    name: "Lisa Hom"
+}, {
+    id: 11,
+    path: "lloyd_b",
+    name: "Lloyd Bradbury"
+}, {
+    id: 12,
+    path: "matt_h",
+    name: "Matt Hartsough"
+}, {
+    id: 13,
+    path: "matt_s",
+    name: "Matt Story"
+}, {
+    id: 14,
+    path: "phil_s",
+    name: "Phil Sturgeon"
+}, {
+    id: 16,
+    path: "tun_k",
+    name: "Tun Khine"
+}, {
+    id: 17,
+    path: "vlad_r",
+    name: "Vladimir Rabinovich"
+}];
+
+var TeamGallery = function (_React$Component) {
+    _inherits(TeamGallery, _React$Component);
+
+    function TeamGallery() {
+        _classCallCheck(this, TeamGallery);
+
+        return _possibleConstructorReturn(this, (TeamGallery.__proto__ || Object.getPrototypeOf(TeamGallery)).apply(this, arguments));
+    }
+
+    _createClass(TeamGallery, [{
+        key: 'render',
+        value: function render() {
+            var profileBlock = teamImages.map(function (profile) {
+                return _react2.default.createElement(
+                    'div',
+                    { key: profile.id, className: _team2.default.teamMember },
+                    _react2.default.createElement(
+                        'div',
+                        { key: profile.id, className: _team2.default.circle },
+                        _react2.default.createElement('img', { key: profile.id, src: __webpack_require__(54)("./" + profile.path + '.png') })
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        profile.name
+                    )
+                );
+            });
+            return _react2.default.createElement(
+                'div',
+                { id: 'team', className: _team2.default.team },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
+                            _react2.default.createElement(
+                                'div',
+                                { className: _team2.default.contentSection },
+                                _react2.default.createElement(
+                                    'h2',
+                                    null,
+                                    'Team'
+                                ),
+                                _react2.default.createElement(
+                                    'div',
+                                    { className: _team2.default.teamContainer },
+                                    profileBlock
+                                )
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return TeamGallery;
+}(_react2.default.Component);
+
+exports.default = TeamGallery;
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA","circle":"team_circle_1oPs4","teamContainer":"team_teamContainer_2d7Bi","teamMember":"team_teamMember_GgsVw"};
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./andrew_b.png": 55,
+	"./bae.png": 56,
+	"./brian_s.png": 57,
+	"./butter_man.png": 58,
+	"./chriska_w.png": 59,
+	"./coalition.png": 17,
+	"./evan_b.png": 60,
+	"./footer.png": 51,
+	"./gabriel_h.png": 61,
+	"./intro.png": 36,
+	"./josh_r.png": 62,
+	"./kimmy_o.png": 63,
+	"./lisa_h.png": 64,
+	"./lloyd_b.png": 65,
+	"./matt_h.png": 66,
+	"./matt_s.png": 67,
+	"./phil_s.png": 80,
+	"./ridgesupply.png": 15,
+	"./sids.png": 14,
+	"./team.png": 44,
+	"./tun_k.png": 81,
+	"./verge.png": 16,
+	"./vlad_r.png": 82
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 54;
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "524b44cacba2525428f2a68b17567d0c.png";
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "545356ccb056d3c1cc9225e34e3b4c41.png";
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ead27cd04ff44bf0308568cdd84cce2b.png";
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "793bbac73a40b3efe623652979933c33.png";
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "32981dbaed31edb7d6e3f61628a86097.png";
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "d622ac375e7175d0913b9bb45d946494.png";
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "27a8acf0a20e6440eb5e21b2077a14b7.png";
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "31587bbf35fa9c0efa649c0f56a58b8a.png";
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "69e17d6ab9a6aee4dd19974404cad3c4.png";
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "8804c8dee1cc6bbd8062977b0f47c3f7.png";
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c1c0da509dfebebfd08dc06e596b0c81.png";
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e5a8aebb052fab0c4ba9c0e1a51d7657.png";
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7753f32ef19d37d1999a64c5a330dbf8.png";
+
+/***/ }),
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "231e6706f91b7c576270103e94b56854.png";
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "b6a73a2337e8ba5746fdf4507535c99e.png";
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "052a7501b4b40da9ddcde8e003ad6b85.png";
 
 /***/ })
 /******/ ]);

@@ -10,10 +10,10 @@ export default class Nav extends React.Component {
                     <NavLogo/>
                 </div>
                 <ul>
-                    <li>About</li>
-                    <li>Team</li>
-                    <li>Sponsors</li>
-                    <li>Contact</li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         )
