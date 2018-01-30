@@ -19,7 +19,7 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 if (isDeveloping) {
-    console.log(process.env.NODE_ENV)
+    console.log(hello)
   const compiler = webpack(config);
   const middleware = webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
@@ -43,7 +43,7 @@ if (isDeveloping) {
   app.use(webpackHotMiddleware(compiler, {
     path: '/__webpack_hmr',
     heartbeat: 10 * 1000
-  }));
+  }), console.log(why));
 } else {
   app.use(express.static(__dirname + '/dist'));
 }
