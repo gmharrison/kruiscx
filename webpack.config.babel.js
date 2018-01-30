@@ -11,7 +11,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
 	entry: [
-        path.join(__dirname, './index.js'), 'webpack-hot-middleware/client?http://0.0.0.0:3000/'
+        path.join(__dirname, './index.js')
 	],
     devServer: {
       contentBase: './dist',
