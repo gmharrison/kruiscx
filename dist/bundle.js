@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "db588322a1b930a42e8e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1c297985614183406eac"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -19652,7 +19652,6 @@ var Contact = function (_React$Component) {
         value: function handleSubmit(event) {
             event.preventDefault();
             var data = new FormData(event.target);
-
             fetch('/form-submit', {
                 method: 'POST',
                 contentType: "application/json; charset=utf-8",
@@ -19664,7 +19663,6 @@ var Contact = function (_React$Component) {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
-
                 }
             });
         }
