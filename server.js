@@ -1,8 +1,6 @@
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
-const webpackMiddleware = require('webpack-dev-middleware');
-const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('./webpack.config.babel.js');
 
 if (process.env.NODE_ENV !== 'production') {
@@ -19,7 +17,8 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 if (isDeveloping) {
-    console.log(hello)
+  const webpackMiddleware = require('webpack-dev-middleware');
+  const webpackHotMiddleware = require('webpack-hot-middleware');
   const compiler = webpack(config);
   const middleware = webpackMiddleware(compiler, {
     publicPath: config.output.publicPath,
@@ -43,7 +42,7 @@ if (isDeveloping) {
   app.use(webpackHotMiddleware(compiler, {
     path: '/__webpack_hmr',
     heartbeat: 10 * 1000
-  }), console.log(why));
+  }));
 } else {
   app.use(express.static(__dirname + '/dist'));
 }
