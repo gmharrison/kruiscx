@@ -11,8 +11,12 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
 	entry: [
-		path.join(__dirname, './index.js')
+        path.join(__dirname, './index.js'), 'webpack-hot-middleware/client?http://0.0.0.0:3000/'
 	],
+    devServer: {
+      contentBase: './dist',
+      hot: true
+    },
 	module: {
 		loaders: [{
 			test: /\.(js|jsx)$/,
@@ -86,5 +90,15 @@ module.exports = {
 	plugins: [
         HTMLWebpackPluginConfig,
         new ExtractTextPlugin("styles.css"),
+        // OccurenceOrderPlugin is needed for webpack 1.x only
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
+        // Use NoErrorsPlugin for webpack 1.x
+        new webpack.NoEmitOnErrorsPlugin(),
+        new webpack.DefinePlugin({
+        'process.env': {
+            'NODE_ENV': "'development'"
+        },
+      })
     ]
 }

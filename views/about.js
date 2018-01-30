@@ -12,12 +12,21 @@ export default class About extends React.Component {
                             <div className={styles.contentSection}>
                                 <h2>About</h2>
                                 <div className={styles.graySectionText}>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                                    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                                    Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-                                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
-                                    qui blandit praesent luptatum.
+                                    KruisCX was founded in 2013 so a group of close friends could race cyclocross together.
+                                    Over the years, we have evolved into a team that races in nearly all disciplines,
+                                    from road to cyclocross to mountain bike. Although members have come and gone, the
+                                    core goal remains the same—to have fun with friends on bikes.
+                                    <br /><br />
+                                    Based in New York City, KruisCX targets a broad array of local road races, taking
+                                    advantage of the proximity to training and racing in Prospect and Central Park.
+                                    Cyclocross season sees team members traveling further afield to compete in the
+                                    Mid-Atlantic, New Jersey, and Pennsylvania Cyclocross Series.
+                                    <br /><br />
+                                    The 2018 race season brings a host of new changes. Along with an expanded Men’s
+                                    roster, KruisCX is doubling down on bringing more people of all backgrounds and
+                                    identities into the sport by forming a Women’s team. We are grateful to be supported
+                                    by Sid’s Bikes, one of our favorite bike shops in New York City, along with apparel
+                                    suppliers VergeSport and Ridge Supply.
                                 </div>
                             </div>
                         </div>

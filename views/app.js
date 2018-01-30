@@ -7,7 +7,7 @@ import Contact from "./contact";
 import Footer from "./footer";
 import TeamGallery from "./team";
 
-export default class App extends Component {
+export default class KruisApp extends Component {
     render () {
         return (
             <div>
