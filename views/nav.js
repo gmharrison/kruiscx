@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../static/css/components/nav.scss'
 import NavLogo from '../static/img/nav-logo.svg'
 
+
 export default class Nav extends React.Component {
     render() {
         return (

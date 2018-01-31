@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b2b1f8b0f736a930ed69"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f6abfc5d473d41205fc8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1215,25 +1215,25 @@ module.exports = ReactPropTypesSecret;
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "97d37e4ab8a51e79dc49fee07f20be5e.png";
+module.exports = __webpack_require__.p + "sids.png";
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "a93ee82e9405235c42df5a88389fba37.png";
+module.exports = __webpack_require__.p + "ridgesupply.png";
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "a1db2cb3738c9f49ca05d11cebf1f83d.png";
+module.exports = __webpack_require__.p + "verge.png";
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "13b0217f8e936d999eca5711611c797e.png";
+module.exports = __webpack_require__.p + "coalition.png";
 
 /***/ }),
 /* 13 */
@@ -1436,7 +1436,7 @@ module.exports = Html5Entities;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(15);
-module.exports = __webpack_require__(77);
+module.exports = __webpack_require__(78);
 
 
 /***/ }),
@@ -1461,6 +1461,8 @@ var _App2 = _interopRequireDefault(_App);
 var _reactHotLoader = __webpack_require__(69);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+__webpack_require__(77);
 
 var render = function render(Component) {
   _reactDom2.default.render(_react2.default.createElement(
@@ -18987,7 +18989,7 @@ module.exports = {"intro":"intro_intro_177Bj","centeringHeader":"intro_centering
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "80a310fdf953393c58f0dd6b5dc550a1.png";
+module.exports = __webpack_require__.p + "intro.png";
 
 /***/ }),
 /* 35 */
@@ -19453,7 +19455,7 @@ module.exports = {"team":"social_team_jxxr2","contentSection":"social_contentSec
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "9d7efa699cb80ffaf2f89a5ccc02ae05.png";
+module.exports = __webpack_require__.p + "team.png";
 
 /***/ }),
 /* 43 */
@@ -19629,6 +19631,8 @@ var _contact2 = _interopRequireDefault(_contact);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -19644,11 +19648,17 @@ var Contact = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
 
         _this.handleSubmit = _this.handleSubmit.bind(_this);
-        _this.state = { result: '' };
+        _this.handleChange = _this.handleChange.bind(_this);
+        _this.state = { result: '', name: '', email: '', message: '' };
         return _this;
     }
 
     _createClass(Contact, [{
+        key: 'handleChange',
+        value: function handleChange(event, name) {
+            this.setState(_defineProperty({}, name, event.target.value));
+        }
+    }, {
         key: 'handleSubmit',
         value: function handleSubmit(event) {
             var _this2 = this;
@@ -19670,7 +19680,7 @@ var Contact = function (_React$Component) {
             }).then(function (response) {
                 return response.json();
             }).then(function (json) {
-                _this2.setState({ result: json.message });
+                _this2.setState({ result: json.message, name: '', email: '', message: '' });
             }).catch(function (error) {
                 console.error(error);
             });
@@ -19678,6 +19688,8 @@ var Contact = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
+            var _this3 = this;
+
             return _react2.default.createElement(
                 'div',
                 { id: 'contact', className: _contact2.default.contact },
@@ -19710,17 +19722,26 @@ var Contact = function (_React$Component) {
                                             _react2.default.createElement(
                                                 'div',
                                                 { className: 'col-md-6 ' + _contact2.default.formColLeft },
-                                                _react2.default.createElement('input', { name: 'name', type: 'text', className: 'form-control ' + _contact2.default.contactInput, required: true, placeholder: 'Name' })
+                                                _react2.default.createElement('input', { name: 'name', type: 'text', value: this.state.name, onChange: function onChange(e) {
+                                                        return _this3.handleChange(e, 'name');
+                                                    },
+                                                    className: 'form-control ' + _contact2.default.contactInput, required: true, placeholder: 'Name' })
                                             ),
                                             _react2.default.createElement(
                                                 'div',
                                                 { className: 'col-md-6 ' + _contact2.default.formColRight },
-                                                _react2.default.createElement('input', { name: 'email', type: 'text', className: 'form-control ' + _contact2.default.contactInput, required: true, placeholder: 'Email' })
+                                                _react2.default.createElement('input', { name: 'email', value: this.state.email, type: 'text', onChange: function onChange(e) {
+                                                        return _this3.handleChange(e, 'email');
+                                                    },
+                                                    className: 'form-control ' + _contact2.default.contactInput, required: true, placeholder: 'Email' })
                                             ),
                                             _react2.default.createElement(
                                                 'div',
                                                 { className: 'col-md-12 ' + _contact2.default.formCol },
-                                                _react2.default.createElement('textarea', { name: 'message', className: 'form-control ' + _contact2.default.contactInput, required: true, id: 'exampleFormControlTextarea1',
+                                                _react2.default.createElement('textarea', { name: 'message', value: this.state.message, onChange: function onChange(e) {
+                                                        return _this3.handleChange(e, 'message');
+                                                    },
+                                                    className: 'form-control ' + _contact2.default.contactInput, required: true, id: 'Message',
                                                     placeholder: 'Message', rows: '3' })
                                             )
                                         ),
@@ -19881,7 +19902,7 @@ module.exports = {"footer":"footer_footer_zGyJk","socialLinks":"footer_socialLin
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "476f713db1db57d2f44c9876f52e5809.png";
+module.exports = __webpack_require__.p + "footer.png";
 
 /***/ }),
 /* 50 */
@@ -20116,97 +20137,97 @@ webpackContext.id = 52;
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "524b44cacba2525428f2a68b17567d0c.png";
+module.exports = __webpack_require__.p + "andrew_b.png";
 
 /***/ }),
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "545356ccb056d3c1cc9225e34e3b4c41.png";
+module.exports = __webpack_require__.p + "bae.png";
 
 /***/ }),
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "ead27cd04ff44bf0308568cdd84cce2b.png";
+module.exports = __webpack_require__.p + "brian_s.png";
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "793bbac73a40b3efe623652979933c33.png";
+module.exports = __webpack_require__.p + "butter_man.png";
 
 /***/ }),
 /* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "32981dbaed31edb7d6e3f61628a86097.png";
+module.exports = __webpack_require__.p + "chriska_w.png";
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "d622ac375e7175d0913b9bb45d946494.png";
+module.exports = __webpack_require__.p + "evan_b.png";
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "27a8acf0a20e6440eb5e21b2077a14b7.png";
+module.exports = __webpack_require__.p + "gabriel_h.png";
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "31587bbf35fa9c0efa649c0f56a58b8a.png";
+module.exports = __webpack_require__.p + "josh_r.png";
 
 /***/ }),
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "69e17d6ab9a6aee4dd19974404cad3c4.png";
+module.exports = __webpack_require__.p + "kimmy_o.png";
 
 /***/ }),
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "8804c8dee1cc6bbd8062977b0f47c3f7.png";
+module.exports = __webpack_require__.p + "lisa_h.png";
 
 /***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "c1c0da509dfebebfd08dc06e596b0c81.png";
+module.exports = __webpack_require__.p + "lloyd_b.png";
 
 /***/ }),
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "e5a8aebb052fab0c4ba9c0e1a51d7657.png";
+module.exports = __webpack_require__.p + "matt_h.png";
 
 /***/ }),
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "7753f32ef19d37d1999a64c5a330dbf8.png";
+module.exports = __webpack_require__.p + "matt_s.png";
 
 /***/ }),
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "231e6706f91b7c576270103e94b56854.png";
+module.exports = __webpack_require__.p + "phil_s.png";
 
 /***/ }),
 /* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "b6a73a2337e8ba5746fdf4507535c99e.png";
+module.exports = __webpack_require__.p + "tun_k.png";
 
 /***/ }),
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "052a7501b4b40da9ddcde8e003ad6b85.png";
+module.exports = __webpack_require__.p + "vlad_r.png";
 
 /***/ }),
 /* 69 */
@@ -21069,6 +21090,12 @@ module.exports = exports['default'];
 /* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "favicon.ico";
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /* WEBPACK VAR INJECTION */(function(__resourceQuery, module) {/*eslint-env browser*/
 /*global __resourceQuery __webpack_public_path__*/
 
@@ -21085,7 +21112,7 @@ var options = {
   ansiColors: {}
 };
 if (true) {
-  var querystring = __webpack_require__(79);
+  var querystring = __webpack_require__(80);
   var overrides = querystring.parse(__resourceQuery.slice(1));
   setOverrides(overrides);
 }
@@ -21222,11 +21249,11 @@ if (typeof window !== 'undefined') {
 }
 
 function createReporter() {
-  var strip = __webpack_require__(82);
+  var strip = __webpack_require__(83);
 
   var overlay;
   if (typeof document !== 'undefined' && options.overlay) {
-    overlay = __webpack_require__(84)({
+    overlay = __webpack_require__(85)({
       ansiColors: options.ansiColors,
       overlayStyles: options.overlayStyles
     });
@@ -21282,7 +21309,7 @@ function createReporter() {
   };
 }
 
-var processUpdate = __webpack_require__(89);
+var processUpdate = __webpack_require__(90);
 
 var customHandler;
 var subscribeAllHandler;
@@ -21348,10 +21375,10 @@ if (module) {
   };
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, "?http://0.0.0.0:3000/", __webpack_require__(78)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, "?http://0.0.0.0:3000/", __webpack_require__(79)(module)))
 
 /***/ }),
-/* 78 */
+/* 79 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -21379,18 +21406,18 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(80);
-exports.encode = exports.stringify = __webpack_require__(81);
+exports.decode = exports.parse = __webpack_require__(81);
+exports.encode = exports.stringify = __webpack_require__(82);
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21481,7 +21508,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21573,12 +21600,12 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ansiRegex = __webpack_require__(83)();
+var ansiRegex = __webpack_require__(84)();
 
 module.exports = function (str) {
 	return typeof str === 'string' ? str.replace(ansiRegex, '') : str;
@@ -21586,7 +21613,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 83 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21597,7 +21624,7 @@ module.exports = function () {
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*eslint-env browser*/
@@ -21623,7 +21650,7 @@ var styles = {
   textAlign: 'left'
 };
 
-var ansiHTML = __webpack_require__(85);
+var ansiHTML = __webpack_require__(86);
 var colors = {
   reset: ['transparent', 'transparent'],
   black: '181818',
@@ -21637,7 +21664,7 @@ var colors = {
   darkgrey: '6D7891'
 };
 
-var Entities = __webpack_require__(86).AllHtmlEntities;
+var Entities = __webpack_require__(87).AllHtmlEntities;
 var entities = new Entities();
 
 function showProblems(type, lines) {
@@ -21700,7 +21727,7 @@ module.exports.showProblems = showProblems;
 
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21883,19 +21910,19 @@ ansiHTML.reset()
 
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = {
-  XmlEntities: __webpack_require__(87),
-  Html4Entities: __webpack_require__(88),
+  XmlEntities: __webpack_require__(88),
+  Html4Entities: __webpack_require__(89),
   Html5Entities: __webpack_require__(13),
   AllHtmlEntities: __webpack_require__(13)
 };
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports) {
 
 var ALPHA_INDEX = {
@@ -22056,7 +22083,7 @@ module.exports = XmlEntities;
 
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports) {
 
 var HTML_ALPHA = ['apos', 'nbsp', 'iexcl', 'cent', 'pound', 'curren', 'yen', 'brvbar', 'sect', 'uml', 'copy', 'ordf', 'laquo', 'not', 'shy', 'reg', 'macr', 'deg', 'plusmn', 'sup2', 'sup3', 'acute', 'micro', 'para', 'middot', 'cedil', 'sup1', 'ordm', 'raquo', 'frac14', 'frac12', 'frac34', 'iquest', 'Agrave', 'Aacute', 'Acirc', 'Atilde', 'Auml', 'Aring', 'Aelig', 'Ccedil', 'Egrave', 'Eacute', 'Ecirc', 'Euml', 'Igrave', 'Iacute', 'Icirc', 'Iuml', 'ETH', 'Ntilde', 'Ograve', 'Oacute', 'Ocirc', 'Otilde', 'Ouml', 'times', 'Oslash', 'Ugrave', 'Uacute', 'Ucirc', 'Uuml', 'Yacute', 'THORN', 'szlig', 'agrave', 'aacute', 'acirc', 'atilde', 'auml', 'aring', 'aelig', 'ccedil', 'egrave', 'eacute', 'ecirc', 'euml', 'igrave', 'iacute', 'icirc', 'iuml', 'eth', 'ntilde', 'ograve', 'oacute', 'ocirc', 'otilde', 'ouml', 'divide', 'oslash', 'ugrave', 'uacute', 'ucirc', 'uuml', 'yacute', 'thorn', 'yuml', 'quot', 'amp', 'lt', 'gt', 'OElig', 'oelig', 'Scaron', 'scaron', 'Yuml', 'circ', 'tilde', 'ensp', 'emsp', 'thinsp', 'zwnj', 'zwj', 'lrm', 'rlm', 'ndash', 'mdash', 'lsquo', 'rsquo', 'sbquo', 'ldquo', 'rdquo', 'bdquo', 'dagger', 'Dagger', 'permil', 'lsaquo', 'rsaquo', 'euro', 'fnof', 'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon', 'Zeta', 'Eta', 'Theta', 'Iota', 'Kappa', 'Lambda', 'Mu', 'Nu', 'Xi', 'Omicron', 'Pi', 'Rho', 'Sigma', 'Tau', 'Upsilon', 'Phi', 'Chi', 'Psi', 'Omega', 'alpha', 'beta', 'gamma', 'delta', 'epsilon', 'zeta', 'eta', 'theta', 'iota', 'kappa', 'lambda', 'mu', 'nu', 'xi', 'omicron', 'pi', 'rho', 'sigmaf', 'sigma', 'tau', 'upsilon', 'phi', 'chi', 'psi', 'omega', 'thetasym', 'upsih', 'piv', 'bull', 'hellip', 'prime', 'Prime', 'oline', 'frasl', 'weierp', 'image', 'real', 'trade', 'alefsym', 'larr', 'uarr', 'rarr', 'darr', 'harr', 'crarr', 'lArr', 'uArr', 'rArr', 'dArr', 'hArr', 'forall', 'part', 'exist', 'empty', 'nabla', 'isin', 'notin', 'ni', 'prod', 'sum', 'minus', 'lowast', 'radic', 'prop', 'infin', 'ang', 'and', 'or', 'cap', 'cup', 'int', 'there4', 'sim', 'cong', 'asymp', 'ne', 'equiv', 'le', 'ge', 'sub', 'sup', 'nsub', 'sube', 'supe', 'oplus', 'otimes', 'perp', 'sdot', 'lceil', 'rceil', 'lfloor', 'rfloor', 'lang', 'rang', 'loz', 'spades', 'clubs', 'hearts', 'diams'];
@@ -22209,7 +22236,7 @@ module.exports = Html4Entities;
 
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**

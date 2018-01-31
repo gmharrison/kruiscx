@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import KruisApp from './views/App';
 import { AppContainer } from 'react-hot-loader'
+require('!file-loader?name=[name].[ext]!./static/img/favicon.ico')
 
 const render = Component => {
   ReactDOM.render(

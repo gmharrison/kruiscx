@@ -56,12 +56,7 @@ module.exports = {
                 test: /\.(jpe?g|png|gif)$/,
                 use: [
                 {
-                  loader: 'file-loader',
-                  options: {
-                    query: {
-                      name:'webpack_bundles/img/[name].[ext]'
-                    }
-                  }
+                  loader: 'file-loader?name=[name].[ext]',
                 },
                 {
                   loader: 'image-webpack-loader',
@@ -76,7 +71,7 @@ module.exports = {
                       optipng: {
                         optimizationLevel: 7,
                       },
-                        name:'/img/[name].[ext]'
+                        name:'/img/name=[name].[ext]'
                     }
                   }
                 }],

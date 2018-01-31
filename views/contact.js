@@ -6,7 +6,12 @@ export default class Contact extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.state = {result: ''}
+        this.handleChange = this.handleChange.bind(this);
+        this.state = {result: '', name: '', email: '', message: ''}
+    }
+
+    handleChange(event, name) {
+        this.setState({ [name]: event.target.value });
     }
 
     handleSubmit(event) {
@@ -26,7 +31,7 @@ export default class Contact extends React.Component {
             }
         }).then(response => response.json())
           .then((json) => {
-            this.setState({result: json.message })
+            this.setState({result: json.message, name: '', email: '', message: '' })
         }).catch((error) => {
             console.error(error);
         });
@@ -44,14 +49,17 @@ export default class Contact extends React.Component {
                                     <form onSubmit={this.handleSubmit} method="post">
                                         <div className="form-row">
                                           <div className={`col-md-6 ${styles.formColLeft}`}>
-                                              <input name="name" type="text" className={`form-control ${styles.contactInput}`} required placeholder="Name" />
+                                              <input name="name" type="text" value={this.state.name} onChange={ (e) => this.handleChange(e, 'name') }
+                                                     className={`form-control ${styles.contactInput}`} required placeholder="Name" />
                                           </div>
                                           <div className={`col-md-6 ${styles.formColRight}`}>
-                                              <input name="email" type="text" className={`form-control ${styles.contactInput}`} required placeholder="Email" />
+                                              <input name="email" value={this.state.email} type="text" onChange={ (e) => this.handleChange(e, 'email') }
+                                                     className={`form-control ${styles.contactInput}`} required placeholder="Email" />
                                           </div>
                                           <div className={`col-md-12 ${styles.formCol}`}>
-                                              <textarea name="message" className={`form-control ${styles.contactInput}`} required id="exampleFormControlTextarea1"
-                                                        placeholder="Message" rows="3" />
+                                              <textarea name="message" value={this.state.message} onChange={ (e) => this.handleChange(e, 'message') }
+                                                    className={`form-control ${styles.contactInput}`} required id="Message"
+                                                    placeholder="Message" rows="3" />
                                           </div>
                                         </div>
                                         <button type="submit" className={`btn ${styles.submitButton}`}>Say Hi</button>
