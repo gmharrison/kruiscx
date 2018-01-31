@@ -80,16 +80,15 @@ app.post('/form-submit', function(req, res){
       '<span style="color: #3f464d; font-size: 14px;">'+ message +'</span></div>'
   }
 
-  transporter.sendMail(mailOptions, (error, res) => {
+  transporter.sendMail(mailOptions, (error, info) => {
     if(error){
       console.log('Error!')
-      return res.status(500).send({ result: "error" });
+      return res.status(500).send({ message: 'Something went wrong <U+1F6AB>' });
     } else {
       console.log('Sent!')
-      return res.status(200).send({ result: "success" });
+      return res.status(200).send({ message: 'Thanks for contacting us! <U+1F6B4><U+200D>‍' });
     }
-    })
-    res.json(data);
+  })
 });
 
 app.listen(port, '0.0.0.0', function onStart(err) {

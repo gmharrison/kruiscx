@@ -24,16 +24,12 @@ export default class Contact extends React.Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             }
-        })
-          .then((res) => {
-            if (res.status == 200) {
-              this.setState({result: 'Thanks for contacting us! 🚴‍'})
-            }
-            else this.setState({result: 'Something went wrong 🚫'})
-          })
-          .catch((error) => {
+        }).then(response => response.json())
+          .then((json) => {
+            this.setState({result: json.message})
+        }).catch((error) => {
             console.error(error);
-          });
+        });
     }
 
     render() {
