@@ -82,10 +82,12 @@ app.post('/form-submit', function(req, res){
 
   transporter.sendMail(mailOptions, (error, res) => {
     if(error){
-        return res.status(500).send({ result: "error" });
+      console.log('Error!')
+      return res.status(500).send({ result: "error" });
     } else {
-        return res.status(200).send({ result: "success" });
-        }
+      console.log('Sent!')
+      return res.status(200).send({ result: "success" });
+    }
     })
     res.json(data);
 });

@@ -9,7 +9,6 @@ export default class Contact extends React.Component {
         this.state = {result: ''}
     }
 
-
     handleSubmit(event) {
         event.preventDefault();
         const data = new FormData(event.target);
