@@ -64,6 +64,10 @@ const teamImages = [
         name: "Tun Khine"
     }, {
         id: 17,
+        path: "rod",
+        name: "Rod Millott"
+    }, {
+        id: 18,
         path: "vlad_r",
         name: "Vladimir Rabinovich"
     }
