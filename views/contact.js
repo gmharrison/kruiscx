@@ -26,7 +26,7 @@ export default class Contact extends React.Component {
             }
         }).then(response => response.json())
           .then((json) => {
-            this.setState({result: json.message})
+            this.setState({result: json.message })
         }).catch((error) => {
             console.error(error);
         });
@@ -58,6 +58,7 @@ export default class Contact extends React.Component {
                                         <div className={styles.result}>{ this.state.result }</div>
                                     </form>
                                 </div>
+                                <div className={styles.emoji}>&#x1F422;<span></span>&#x1F430;</div>
                             </div>
                         </div>
                     </div>

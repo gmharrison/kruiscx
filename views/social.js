@@ -76,7 +76,7 @@ export default class Social extends React.Component {
         let pictures = this.state.linkList.map((pic) => {
             return (
             <div className={styles.imageContainer}>
-                 <div dangerouslySetInnerHTML={{__html: pic.html}} />
+                 <div className={styles.subFlex} dangerouslySetInnerHTML={{__html: pic.html}} />
              </div>
             )
         })

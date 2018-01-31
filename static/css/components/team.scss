@@ -36,7 +36,6 @@
   -moz-clip-path: circle(70px at center);
 }
 
-
 .teamContainer {
   display: flex;
   flex-wrap: wrap;
@@ -50,5 +49,23 @@
   p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .circle {
+    width: 104px;
+    height: 104px;
+    clip-path: circle(52px at center);
+    -webkit-clip-path: circle(52px at center);
+    -moz-clip-path: circle(52px at center);
+  }
+
+  .circle img {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(48px at center);
+    -webkit-clip-path: circle(48px at center);
+    -moz-clip-path: circle(48px at center);
   }
 }

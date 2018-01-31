@@ -83,27 +83,21 @@
 .social_galleryContainer_fxAGI {
   display: flex;
   flex-flow: row;
-  flex-wrap: wrap;
-  margin: 0 1em; }
+  flex-wrap: wrap; }
   .social_galleryContainer_fxAGI .social_imageContainer_3k0ew {
-    flex: 0 0 100%;
-    margin: 10px;
-    padding: 0 10px; }
+    width: 100%;
+    padding: 0 10px;
+    flex: 1; }
+    .social_galleryContainer_fxAGI .social_imageContainer_3k0ew .social_subFlex_qaRAV {
+      display: flex; }
+    .social_galleryContainer_fxAGI .social_imageContainer_3k0ew iframe {
+      width: auto !important;
+      flex: 1 !important; }
 
 .social_galleryContainer_fxAGI::before, .social_container_2lXOD::after {
   content: '';
   width: 100%;
   order: 1; }
-
-.social_imageContainer_3k0ew:nth-child(n + 3) {
-  order: 1; }
-
-.social_imageContainer_3k0ew:nth-child(n + 6) {
-  order: 2; }
-
-@media (min-width: 48em) {
-  .social_galleryContainer_fxAGI > .social_imageContainer_3k0ew {
-    flex: 1; } }
 .sponsors_contentSection_27i5x {
   color: #3f464d;
   padding: 75px 0; }
@@ -175,7 +169,15 @@
   text-align: center;
   font-family: 'Roboto';
   color: #73808D;
+  font-size: 14px;
+  padding-bottom: 15px; }
+
+.contact_emoji_3w1Y9 {
+  width: 100%;
+  text-align: center;
   font-size: 18px; }
+  .contact_emoji_3w1Y9 span {
+    padding: 0 5px; }
 
 @media screen and (max-width: 480px) {
   .contact_contactFormContainer_3DAcE .contact_formCol_3d7x1, .contact_contactFormContainer_3DAcE .contact_formColRight_19Qa-, .contact_contactFormContainer_3DAcE .contact_formColLeft_1CSmG {
@@ -236,3 +238,17 @@
   .team_teamMember_GgsVw p {
     font-family: 'Roboto', sans-serif;
     text-align: center; }
+
+@media screen and (max-width: 480px) {
+  .team_circle_1oPs4 {
+    width: 104px;
+    height: 104px;
+    clip-path: circle(52px at center);
+    -webkit-clip-path: circle(52px at center);
+    -moz-clip-path: circle(52px at center); }
+  .team_circle_1oPs4 img {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(48px at center);
+    -webkit-clip-path: circle(48px at center);
+    -moz-clip-path: circle(48px at center); } }

@@ -41,7 +41,15 @@
   text-align: center;
   font-family: 'Roboto';
   color: #73808D;
+  font-size: 14px;
+  padding-bottom: 15px; }
+
+.emoji {
+  width: 100%;
+  text-align: center;
   font-size: 18px; }
+  .emoji span {
+    padding: 0 5px; }
 
 @media screen and (max-width: 480px) {
   .contactFormContainer .formCol, .contactFormContainer .formColRight, .contactFormContainer .formColLeft {

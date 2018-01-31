@@ -19,12 +19,20 @@
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  margin: 0 1em;
 
   .imageContainer {
-    flex: 0 0 100%;
-    margin: 10px;
+    width: 100%;
     padding: 0 10px;
+    flex: 1;
+
+    .subFlex {
+      display: flex;
+    }
+
+    iframe {
+      width: auto !important;
+      flex: 1 !important;
+    }
   }
 }
 
@@ -32,17 +40,4 @@
   content: '';
   width: 100%;
   order: 1;
-}
-
-.imageContainer:nth-child(n + 3) {
-  order: 1;
-}
-.imageContainer:nth-child(n + 6) {
-  order: 2;
-}
-
-@media (min-width: 48em) {
-  .galleryContainer > .imageContainer {
-    flex: 1;
-  }
 }

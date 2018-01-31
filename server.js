@@ -83,10 +83,10 @@ app.post('/form-submit', function(req, res){
   transporter.sendMail(mailOptions, (error, info) => {
     if(error){
       console.log('Error!')
-      return res.status(500).send({ message: 'Something went wrong <U+1F6AB>' });
+      return res.status(500).send({ message: 'Something went wrong' });
     } else {
       console.log('Sent!')
-      return res.status(200).send({ message: 'Thanks for contacting us! <U+1F6B4><U+200D>‍' });
+      return res.status(200).send({ message: 'Thanks for contacting us!' });
     }
   })
 });
