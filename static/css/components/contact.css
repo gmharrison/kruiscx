@@ -37,6 +37,11 @@
   margin-top: 15px;
   border-radius: 0;
   font-size: 18px; }
+.contactFormContainer .result {
+  text-align: center;
+  font-family: 'Roboto';
+  color: #73808D;
+  font-size: 18px; }
 
 @media screen and (max-width: 480px) {
   .contactFormContainer .formCol, .contactFormContainer .formColRight, .contactFormContainer .formColLeft {

@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c3232ef88b70d043ccdb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "20ba2edeb68c7f3aa0b3"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -19441,18 +19441,21 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Contact = function (_React$Component) {
     _inherits(Contact, _React$Component);
 
-    function Contact() {
+    function Contact(props) {
         _classCallCheck(this, Contact);
 
-        var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
+        var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this, props));
 
         _this.handleSubmit = _this.handleSubmit.bind(_this);
+        _this.state = { result: '' };
         return _this;
     }
 
     _createClass(Contact, [{
         key: 'handleSubmit',
         value: function handleSubmit(event) {
+            var _this2 = this;
+
             event.preventDefault();
             var data = new FormData(event.target);
             fetch('/form-submit', {
@@ -19467,6 +19470,12 @@ var Contact = function (_React$Component) {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 }
+            }).then(function (res) {
+                if (res.status == 200) {
+                    _this2.setState({ result: 'Thanks for contacting us! 🚴‍' });
+                } else _this2.setState({ result: 'Something went wrong 🚫' });
+            }).catch(function (error) {
+                console.error(error);
             });
         }
     }, {
@@ -19504,17 +19513,17 @@ var Contact = function (_React$Component) {
                                             _react2.default.createElement(
                                                 'div',
                                                 { className: 'col-md-6 ' + _contact2.default.formColLeft },
-                                                _react2.default.createElement('input', { name: 'name', type: 'text', className: 'form-control ' + _contact2.default.contactInput, placeholder: 'Name' })
+                                                _react2.default.createElement('input', { name: 'name', type: 'text', className: 'form-control ' + _contact2.default.contactInput, required: true, placeholder: 'Name' })
                                             ),
                                             _react2.default.createElement(
                                                 'div',
                                                 { className: 'col-md-6 ' + _contact2.default.formColRight },
-                                                _react2.default.createElement('input', { name: 'email', type: 'text', className: 'form-control ' + _contact2.default.contactInput, placeholder: 'Email' })
+                                                _react2.default.createElement('input', { name: 'email', type: 'text', className: 'form-control ' + _contact2.default.contactInput, required: true, placeholder: 'Email' })
                                             ),
                                             _react2.default.createElement(
                                                 'div',
                                                 { className: 'col-md-12 ' + _contact2.default.formCol },
-                                                _react2.default.createElement('textarea', { name: 'message', className: 'form-control ' + _contact2.default.contactInput, id: 'exampleFormControlTextarea1',
+                                                _react2.default.createElement('textarea', { name: 'message', className: 'form-control ' + _contact2.default.contactInput, required: true, id: 'exampleFormControlTextarea1',
                                                     placeholder: 'Message', rows: '3' })
                                             )
                                         ),
@@ -19522,6 +19531,11 @@ var Contact = function (_React$Component) {
                                             'button',
                                             { type: 'submit', className: 'btn ' + _contact2.default.submitButton },
                                             'Say Hi'
+                                        ),
+                                        _react2.default.createElement(
+                                            'div',
+                                            { className: _contact2.default.result },
+                                            this.state.result
                                         )
                                     )
                                 )
@@ -19557,7 +19571,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contact":"contact_contact_1qMK2","contentSection":"contact_contentSection_1-uiA","contactFormContainer":"contact_contactFormContainer_3DAcE","contactInput":"contact_contactInput_Te3Sr","name":"contact_name_2DYPN","formCol":"contact_formCol_3d7x1","formColLeft":"contact_formColLeft_1CSmG","formColRight":"contact_formColRight_19Qa-","submitButton":"contact_submitButton_2DbGS"};
+module.exports = {"contact":"contact_contact_1qMK2","contentSection":"contact_contentSection_1-uiA","contactFormContainer":"contact_contactFormContainer_3DAcE","contactInput":"contact_contactInput_Te3Sr","name":"contact_name_2DYPN","formCol":"contact_formCol_3d7x1","formColLeft":"contact_formColLeft_1CSmG","formColRight":"contact_formColRight_19Qa-","submitButton":"contact_submitButton_2DbGS","result":"contact_result_3tMiN"};
 
 /***/ }),
 /* 46 */

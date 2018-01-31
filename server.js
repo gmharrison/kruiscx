@@ -1,6 +1,5 @@
 const path = require('path');
 const express = require('express');
-var cors = require('cors')
 const webpack = require('webpack');
 const config = require('./webpack.config.babel.js');
 
@@ -14,9 +13,13 @@ const app = express();
 
 const bodyParser = require('body-parser');
 const nodeMailer = require('nodemailer')
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
-app.use(cors())
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies)
 
 if (isDeveloping) {
   const webpackMiddleware = require('webpack-dev-middleware');
@@ -53,6 +56,7 @@ app.post('/form-submit', function(req, res){
     const email = req.body.email
     const name = req.body.name
     const message = req.body.message
+    const data = req.body
 
   let transporter = nodeMailer.createTransport({
       host: 'smtp.gmail.com',
@@ -76,12 +80,14 @@ app.post('/form-submit', function(req, res){
       '<span style="color: #3f464d; font-size: 14px;">'+ message +'</span></div>'
   }
 
-  transporter.sendMail(mailOptions, (error) => {
-      if (error) {
-          return console.log(error)
-      }
-  })
-
+  transporter.sendMail(mailOptions, (error, res) => {
+    if(error){
+        return res.status(500).send({ result: "error" });
+    } else {
+        return res.status(200).send({ result: "success" });
+        }
+    })
+    res.json(data);
 });
 
 app.listen(port, '0.0.0.0', function onStart(err) {

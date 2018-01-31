@@ -3,10 +3,12 @@ import styles from '../static/css/components/contact.scss'
 
 
 export default class Contact extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.state = {result: ''}
     }
+
 
     handleSubmit(event) {
         event.preventDefault();
@@ -23,7 +25,16 @@ export default class Contact extends React.Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
             }
-        });
+        })
+          .then((res) => {
+            if (res.status == 200) {
+              this.setState({result: 'Thanks for contacting us! 🚴‍'})
+            }
+            else this.setState({result: 'Something went wrong 🚫'})
+          })
+          .catch((error) => {
+            console.error(error);
+          });
     }
 
     render() {
@@ -38,17 +49,18 @@ export default class Contact extends React.Component {
                                     <form onSubmit={this.handleSubmit} method="post">
                                         <div className="form-row">
                                           <div className={`col-md-6 ${styles.formColLeft}`}>
-                                              <input name="name" type="text" className={`form-control ${styles.contactInput}`} placeholder="Name" />
+                                              <input name="name" type="text" className={`form-control ${styles.contactInput}`} required placeholder="Name" />
                                           </div>
                                           <div className={`col-md-6 ${styles.formColRight}`}>
-                                              <input name="email" type="text" className={`form-control ${styles.contactInput}`} placeholder="Email" />
+                                              <input name="email" type="text" className={`form-control ${styles.contactInput}`} required placeholder="Email" />
                                           </div>
                                           <div className={`col-md-12 ${styles.formCol}`}>
-                                              <textarea name="message" className={`form-control ${styles.contactInput}`} id="exampleFormControlTextarea1"
+                                              <textarea name="message" className={`form-control ${styles.contactInput}`} required id="exampleFormControlTextarea1"
                                                         placeholder="Message" rows="3" />
                                           </div>
                                         </div>
                                         <button type="submit" className={`btn ${styles.submitButton}`}>Say Hi</button>
+                                        <div className={styles.result}>{ this.state.result }</div>
                                     </form>
                                 </div>
                             </div>

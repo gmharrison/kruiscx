@@ -171,6 +171,12 @@
   border-radius: 0;
   font-size: 18px; }
 
+.contact_contactFormContainer_3DAcE .contact_result_3tMiN {
+  text-align: center;
+  font-family: 'Roboto';
+  color: #73808D;
+  font-size: 18px; }
+
 @media screen and (max-width: 480px) {
   .contact_contactFormContainer_3DAcE .contact_formCol_3d7x1, .contact_contactFormContainer_3DAcE .contact_formColRight_19Qa-, .contact_contactFormContainer_3DAcE .contact_formColLeft_1CSmG {
     padding: 0; } }
