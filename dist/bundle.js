@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "55efd1dd5a5c929bc109"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ff3012fc93f89a108a00"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -722,7 +722,7 @@
 /******/ 	__webpack_require__.h = function() { return hotCurrentHash; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return hotCreateRequire(13)(__webpack_require__.s = 13);
+/******/ 	return hotCreateRequire(14)(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -735,7 +735,7 @@
 if (false) {
   module.exports = require('./cjs/react.production.min.js');
 } else {
-  module.exports = __webpack_require__(15);
+  module.exports = __webpack_require__(16);
 }
 
 
@@ -1088,31 +1088,31 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _intro = __webpack_require__(30);
+var _intro = __webpack_require__(31);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _about = __webpack_require__(37);
+var _about = __webpack_require__(38);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _social = __webpack_require__(39);
+var _social = __webpack_require__(40);
 
 var _social2 = _interopRequireDefault(_social);
 
-var _sponsors = __webpack_require__(42);
+var _sponsors = __webpack_require__(43);
 
 var _sponsors2 = _interopRequireDefault(_sponsors);
 
-var _contact = __webpack_require__(44);
+var _contact = __webpack_require__(45);
 
 var _contact2 = _interopRequireDefault(_contact);
 
-var _footer = __webpack_require__(46);
+var _footer = __webpack_require__(47);
 
 var _footer2 = _interopRequireDefault(_footer);
 
-var _team = __webpack_require__(49);
+var _team = __webpack_require__(50);
 
 var _team2 = _interopRequireDefault(_team);
 
@@ -1162,9 +1162,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(KruisApp, 'KruisApp', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/App.js');
+    __REACT_HOT_LOADER__.register(KruisApp, 'KruisApp', '/Users/gabrielle/Desktop/git/kruiscx/views/App.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/App.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/App.js');
 }();
 
 ;
@@ -1239,11 +1239,17 @@ module.exports = __webpack_require__.p + "coalition.png";
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(14);
-
+module.exports = __webpack_require__.p + "skratch.png";
 
 /***/ }),
 /* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(15);
+
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1253,7 +1259,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(16);
+var _reactDom = __webpack_require__(17);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -1261,11 +1267,11 @@ var _App = __webpack_require__(6);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _reactHotLoader = __webpack_require__(69);
+var _reactHotLoader = __webpack_require__(75);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(77);
+__webpack_require__(83);
 
 var render = function render(Component) {
   _reactDom2.default.render(_react2.default.createElement(
@@ -1290,13 +1296,13 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(render, 'render', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/index.js');
+  __REACT_HOT_LOADER__.register(render, 'render', '/Users/gabrielle/Desktop/git/kruiscx/index.js');
 }();
 
 ;
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2660,7 +2666,7 @@ module.exports = react;
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2700,12 +2706,12 @@ if (false) {
   checkDCE();
   module.exports = require('./cjs/react-dom.production.min.js');
 } else {
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(18);
 }
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2729,18 +2735,18 @@ if (true) {
 var React = __webpack_require__(0);
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(3);
-var ExecutionEnvironment = __webpack_require__(18);
+var ExecutionEnvironment = __webpack_require__(19);
 var _assign = __webpack_require__(4);
 var emptyFunction = __webpack_require__(1);
-var EventListener = __webpack_require__(19);
-var getActiveElement = __webpack_require__(20);
-var shallowEqual = __webpack_require__(21);
-var containsNode = __webpack_require__(22);
-var focusNode = __webpack_require__(25);
+var EventListener = __webpack_require__(20);
+var getActiveElement = __webpack_require__(21);
+var shallowEqual = __webpack_require__(22);
+var containsNode = __webpack_require__(23);
+var focusNode = __webpack_require__(26);
 var emptyObject = __webpack_require__(7);
 var checkPropTypes = __webpack_require__(5);
-var hyphenateStyleName = __webpack_require__(26);
-var camelizeStyleName = __webpack_require__(28);
+var hyphenateStyleName = __webpack_require__(27);
+var camelizeStyleName = __webpack_require__(29);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -18106,7 +18112,7 @@ module.exports = reactDom;
 
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18145,7 +18151,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18225,7 +18231,7 @@ var EventListener = {
 module.exports = EventListener;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18267,7 +18273,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18338,7 +18344,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18353,7 +18359,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(23);
+var isTextNode = __webpack_require__(24);
 
 /*eslint-disable no-bitwise */
 
@@ -18381,7 +18387,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18396,7 +18402,7 @@ module.exports = containsNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(24);
+var isNode = __webpack_require__(25);
 
 /**
  * @param {*} object The object to check.
@@ -18409,7 +18415,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18437,7 +18443,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18467,7 +18473,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18482,7 +18488,7 @@ module.exports = focusNode;
 
 
 
-var hyphenate = __webpack_require__(27);
+var hyphenate = __webpack_require__(28);
 
 var msPattern = /^ms-/;
 
@@ -18509,7 +18515,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18545,7 +18551,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18560,7 +18566,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(29);
+var camelize = __webpack_require__(30);
 
 var msPattern = /^-ms-/;
 
@@ -18588,7 +18594,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18623,7 +18629,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18639,15 +18645,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _logo = __webpack_require__(31);
+var _logo = __webpack_require__(32);
 
 var _logo2 = _interopRequireDefault(_logo);
 
-var _intro = __webpack_require__(32);
+var _intro = __webpack_require__(33);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _nav = __webpack_require__(34);
+var _nav = __webpack_require__(35);
 
 var _nav2 = _interopRequireDefault(_nav);
 
@@ -18713,15 +18719,15 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Intro, 'Intro', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/intro.js');
+    __REACT_HOT_LOADER__.register(Intro, 'Intro', '/Users/gabrielle/Desktop/git/kruiscx/views/intro.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/intro.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/intro.js');
 }();
 
 ;
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18774,28 +18780,28 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/static/img/logo.svg");
+  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielle/Desktop/git/kruiscx/static/img/logo.svg");
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/static/img/logo.svg");
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielle/Desktop/git/kruiscx/static/img/logo.svg");
 }();
 
 ;
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"intro":"intro_intro_177Bj","centeringHeader":"intro_centeringHeader_ggjti","header":"intro_header_3Wfbg","subHeader":"intro_subHeader_Y8Nq8"};
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "intro.png";
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18811,11 +18817,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _nav = __webpack_require__(35);
+var _nav = __webpack_require__(36);
 
 var _nav2 = _interopRequireDefault(_nav);
 
-var _navLogo = __webpack_require__(36);
+var _navLogo = __webpack_require__(37);
 
 var _navLogo2 = _interopRequireDefault(_navLogo);
 
@@ -18903,22 +18909,22 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Nav, 'Nav', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/nav.js');
+    __REACT_HOT_LOADER__.register(Nav, 'Nav', '/Users/gabrielle/Desktop/git/kruiscx/views/nav.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/nav.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/nav.js');
 }();
 
 ;
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"nav":"nav_nav_2oJf9","navLogo":"nav_navLogo_1xfJJ"};
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18971,15 +18977,15 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/static/img/nav-logo.svg");
+  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielle/Desktop/git/kruiscx/static/img/nav-logo.svg");
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/static/img/nav-logo.svg");
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielle/Desktop/git/kruiscx/static/img/nav-logo.svg");
 }();
 
 ;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18995,7 +19001,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _about = __webpack_require__(38);
+var _about = __webpack_require__(39);
 
 var _about2 = _interopRequireDefault(_about);
 
@@ -19070,22 +19076,22 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(About, 'About', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/about.js');
+    __REACT_HOT_LOADER__.register(About, 'About', '/Users/gabrielle/Desktop/git/kruiscx/views/about.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/about.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/about.js');
 }();
 
 ;
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"contentSection":"about_contentSection_11zXH","graySectionText":"about_graySectionText_Hj7ZJ"};
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19101,7 +19107,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _social = __webpack_require__(40);
+var _social = __webpack_require__(41);
 
 var _social2 = _interopRequireDefault(_social);
 
@@ -19240,28 +19246,28 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Social, 'Social', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/social.js');
+    __REACT_HOT_LOADER__.register(Social, 'Social', '/Users/gabrielle/Desktop/git/kruiscx/views/social.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/social.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/social.js');
 }();
 
 ;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"team":"social_team_jxxr2","contentSection":"social_contentSection_1WBut","galleryContainer":"social_galleryContainer_fxAGI","imageContainer":"social_imageContainer_3k0ew","subFlex":"social_subFlex_qaRAV","container":"social_container_2lXOD"};
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "team.png";
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19277,7 +19283,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _sponsors = __webpack_require__(43);
+var _sponsors = __webpack_require__(44);
 
 var _sponsors2 = _interopRequireDefault(_sponsors);
 
@@ -19296,6 +19302,10 @@ var _verge2 = _interopRequireDefault(_verge);
 var _coalition = __webpack_require__(12);
 
 var _coalition2 = _interopRequireDefault(_coalition);
+
+var _skratch = __webpack_require__(13);
+
+var _skratch2 = _interopRequireDefault(_skratch);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19375,6 +19385,15 @@ var Sponsors = function (_React$Component) {
                                             { href: 'https://www.instagram.com/coalitioncyclingclub/', target: '_blank' },
                                             _react2.default.createElement('img', { src: _coalition2.default })
                                         )
+                                    ),
+                                    _react2.default.createElement(
+                                        'div',
+                                        { className: _sponsors2.default.logo },
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: 'https://www.skratchlabs.com/', target: '_blank' },
+                                            _react2.default.createElement('img', { src: _skratch2.default })
+                                        )
                                     )
                                 )
                             )
@@ -19397,22 +19416,22 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Sponsors, 'Sponsors', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/sponsors.js');
+    __REACT_HOT_LOADER__.register(Sponsors, 'Sponsors', '/Users/gabrielle/Desktop/git/kruiscx/views/sponsors.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/sponsors.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/sponsors.js');
 }();
 
 ;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"contentSection":"sponsors_contentSection_27i5x","logoContainer":"sponsors_logoContainer_21Pxu","logo":"sponsors_logo_1pmeZ"};
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19428,7 +19447,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _contact = __webpack_require__(45);
+var _contact = __webpack_require__(46);
 
 var _contact2 = _interopRequireDefault(_contact);
 
@@ -19587,22 +19606,22 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Contact, 'Contact', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/contact.js');
+    __REACT_HOT_LOADER__.register(Contact, 'Contact', '/Users/gabrielle/Desktop/git/kruiscx/views/contact.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/contact.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/contact.js');
 }();
 
 ;
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"contact":"contact_contact_1qMK2","contentSection":"contact_contentSection_1-uiA","contactFormContainer":"contact_contactFormContainer_3DAcE","contactInput":"contact_contactInput_Te3Sr","name":"contact_name_2DYPN","formCol":"contact_formCol_3d7x1","formColLeft":"contact_formColLeft_1CSmG","formColRight":"contact_formColRight_19Qa-","submitButton":"contact_submitButton_2DbGS","result":"contact_result_3tMiN","emoji":"contact_emoji_3w1Y9"};
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19618,7 +19637,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _footer = __webpack_require__(47);
+var _footer = __webpack_require__(48);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -19687,28 +19706,28 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Footer, 'Footer', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/footer.js');
+    __REACT_HOT_LOADER__.register(Footer, 'Footer', '/Users/gabrielle/Desktop/git/kruiscx/views/footer.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/footer.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/footer.js');
 }();
 
 ;
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"footer":"footer_footer_zGyJk","socialLinks":"footer_socialLinks_22tx6"};
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "footer.png";
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19724,7 +19743,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _team = __webpack_require__(50);
+var _team = __webpack_require__(51);
 
 var _team2 = _interopRequireDefault(_team);
 
@@ -19804,6 +19823,26 @@ var teamImages = [{
     id: 18,
     path: "vlad_r",
     name: "Vladimir Rabinovich"
+}, {
+    id: 19,
+    path: "sjoert_v",
+    name: "Sjoert Van Velzen"
+}, {
+    id: 20,
+    path: "chris_b",
+    name: "Chris Barbieri"
+}, {
+    id: 21,
+    path: "elizabeth_t",
+    name: "Elizabeth Tobey"
+}, {
+    id: 22,
+    path: "pablo_r",
+    name: "Pablo Rivera"
+}, {
+    id: 23,
+    path: "peleg_r",
+    name: "Peleg Rosenthal"
 }];
 
 var TeamGallery = function (_React$Component) {
@@ -19825,7 +19864,7 @@ var TeamGallery = function (_React$Component) {
                     _react2.default.createElement(
                         'div',
                         { key: profile.id, className: _team2.default.circle },
-                        _react2.default.createElement('img', { key: profile.id, src: __webpack_require__(51)("./" + profile.path + '.png') })
+                        _react2.default.createElement('img', { key: profile.id, src: __webpack_require__(52)("./" + profile.path + '.png') })
                     ),
                     _react2.default.createElement(
                         'p',
@@ -19879,51 +19918,57 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(TeamGallery, 'TeamGallery', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/team.js');
+    __REACT_HOT_LOADER__.register(TeamGallery, 'TeamGallery', '/Users/gabrielle/Desktop/git/kruiscx/views/team.js');
 
-    __REACT_HOT_LOADER__.register(teamImages, 'teamImages', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/team.js');
+    __REACT_HOT_LOADER__.register(teamImages, 'teamImages', '/Users/gabrielle/Desktop/git/kruiscx/views/team.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielleharrison/Desktop/git/kruiscx/kruiscx/views/team.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/team.js');
 }();
 
 ;
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA","circle":"team_circle_1oPs4","teamContainer":"team_teamContainer_2d7Bi","teamMember":"team_teamMember_GgsVw"};
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./andrew_b.png": 52,
-	"./bae.png": 53,
-	"./brian_s.png": 54,
-	"./butter_man.png": 55,
-	"./chriska_w.png": 56,
+	"./andrew_b.png": 53,
+	"./bae.png": 54,
+	"./brian_s.png": 55,
+	"./butter_man.png": 56,
+	"./chris_b.png": 57,
+	"./chriska_w.png": 58,
 	"./coalition.png": 12,
-	"./evan_b.png": 57,
-	"./footer.png": 48,
-	"./gabriel_h.png": 58,
-	"./intro.png": 33,
-	"./josh_r.png": 59,
-	"./kimmy_o.png": 60,
-	"./lisa_h.png": 61,
-	"./lloyd_b.png": 62,
-	"./matt_h.png": 63,
-	"./matt_s.png": 64,
-	"./phil_s.png": 65,
+	"./elizabeth_t.png": 59,
+	"./evan_b.png": 60,
+	"./footer.png": 49,
+	"./gabriel_h.png": 61,
+	"./intro.png": 34,
+	"./josh_r.png": 62,
+	"./kimmy_o.png": 63,
+	"./lisa_h.png": 64,
+	"./lloyd_b.png": 65,
+	"./matt_h.png": 66,
+	"./matt_s.png": 67,
+	"./pablo_r.png": 68,
+	"./peleg_r.png": 69,
+	"./phil_s.png": 70,
 	"./ridgesupply.png": 10,
-	"./rod.png": 66,
+	"./rod.png": 71,
 	"./sids.png": 9,
-	"./team.png": 41,
-	"./tun_k.png": 67,
+	"./sjoert_v.png": 72,
+	"./skratch.png": 13,
+	"./team.png": 42,
+	"./tun_k.png": 73,
 	"./verge.png": 11,
-	"./vlad_r.png": 68
+	"./vlad_r.png": 74
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -19939,119 +19984,149 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 51;
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "andrew_b.png";
+webpackContext.id = 52;
 
 /***/ }),
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "bae.png";
+module.exports = __webpack_require__.p + "andrew_b.png";
 
 /***/ }),
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "brian_s.png";
+module.exports = __webpack_require__.p + "bae.png";
 
 /***/ }),
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "butter_man.png";
+module.exports = __webpack_require__.p + "brian_s.png";
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "chriska_w.png";
+module.exports = __webpack_require__.p + "butter_man.png";
 
 /***/ }),
 /* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "evan_b.png";
+module.exports = __webpack_require__.p + "chris_b.png";
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "gabriel_h.png";
+module.exports = __webpack_require__.p + "chriska_w.png";
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "josh_r.png";
+module.exports = __webpack_require__.p + "elizabeth_t.png";
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "kimmy_o.png";
+module.exports = __webpack_require__.p + "evan_b.png";
 
 /***/ }),
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "lisa_h.png";
+module.exports = __webpack_require__.p + "gabriel_h.png";
 
 /***/ }),
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "lloyd_b.png";
+module.exports = __webpack_require__.p + "josh_r.png";
 
 /***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "matt_h.png";
+module.exports = __webpack_require__.p + "kimmy_o.png";
 
 /***/ }),
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "matt_s.png";
+module.exports = __webpack_require__.p + "lisa_h.png";
 
 /***/ }),
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "phil_s.png";
+module.exports = __webpack_require__.p + "lloyd_b.png";
 
 /***/ }),
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "rod.png";
+module.exports = __webpack_require__.p + "matt_h.png";
 
 /***/ }),
 /* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "tun_k.png";
+module.exports = __webpack_require__.p + "matt_s.png";
 
 /***/ }),
 /* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "vlad_r.png";
+module.exports = __webpack_require__.p + "pablo_r.png";
 
 /***/ }),
 /* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(70)
-
+module.exports = __webpack_require__.p + "peleg_r.png";
 
 /***/ }),
 /* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "phil_s.png";
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "rod.png";
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "sjoert_v.png";
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "tun_k.png";
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "vlad_r.png";
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(76)
+
+
+/***/ }),
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20062,17 +20137,17 @@ module.exports = __webpack_require__(70)
 if (false) {
   module.exports = require('./index.prod');
 } else {
-  module.exports = __webpack_require__(71);
+  module.exports = __webpack_require__(77);
 }
 
 /***/ }),
-/* 71 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var AppContainer = __webpack_require__(72);
+var AppContainer = __webpack_require__(78);
 
 module.exports = function warnAboutIncorrectUsage(arg) {
   if (this && this.callback) {
@@ -20087,7 +20162,7 @@ module.exports = function warnAboutIncorrectUsage(arg) {
 module.exports.AppContainer = AppContainer;
 
 /***/ }),
-/* 72 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20098,11 +20173,11 @@ module.exports.AppContainer = AppContainer;
 if (false) {
   module.exports = require('./AppContainer.prod');
 } else {
-  module.exports = __webpack_require__(73);
+  module.exports = __webpack_require__(79);
 }
 
 /***/ }),
-/* 73 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20117,8 +20192,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var React = __webpack_require__(0);
-var PropTypes = __webpack_require__(74);
-var deepForceUpdate = __webpack_require__(76);
+var PropTypes = __webpack_require__(80);
+var deepForceUpdate = __webpack_require__(82);
 
 var Component = React.Component;
 
@@ -20226,7 +20301,7 @@ AppContainer.propTypes = {
 module.exports = AppContainer;
 
 /***/ }),
-/* 74 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -20251,7 +20326,7 @@ if (true) {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(75)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(81)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
@@ -20260,7 +20335,7 @@ if (true) {
 
 
 /***/ }),
-/* 75 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20809,7 +20884,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
-/* 76 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20901,7 +20976,7 @@ function deepForceUpdate(instance) {
 module.exports = exports['default'];
 
 /***/ }),
-/* 77 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "favicon.ico";
