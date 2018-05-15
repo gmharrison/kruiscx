@@ -4,6 +4,7 @@ import Sids from '../static/img/sids.png'
 import Ridge from '../static/img/ridgesupply.png'
 import Verge from '../static/img/verge.png'
 import Coalition from '../static/img/coalition.png'
+import Skratch from '../static/img/skratch.png'
 
 
 export default class Sponsors extends React.Component {
@@ -34,6 +35,11 @@ export default class Sponsors extends React.Component {
                                     <div className={styles.logo}>
                                         <a href="https://www.instagram.com/coalitioncyclingclub/" target="_blank">
                                             <img src={Coalition} />
+                                        </a>
+                                    </div>
+                                    <div className={styles.logo}>
+                                        <a href="https://www.skratchlabs.com/" target="_blank">
+                                            <img src={Skratch} />
                                         </a>
                                     </div>
                                 </div>

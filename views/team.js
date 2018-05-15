@@ -70,6 +70,26 @@ const teamImages = [
         id: 18,
         path: "vlad_r",
         name: "Vladimir Rabinovich"
+    }, {
+        id: 19,
+        path: "sjoert_v",
+        name: "Sjoert Van Velzen"
+    }, {
+        id: 20,
+        path: "chris_b",
+        name: "Chris Barbieri"
+    }, {
+        id: 21,
+        path: "elizabeth_t",
+        name: "Elizabeth Tobey"
+    }, {
+        id: 22,
+        path: "pablo_r",
+        name: "Pablo Rivera"
+    }, {
+        id: 23,
+        path: "peleg_r",
+        name: "Peleg Rosenthal"
     }
 ]
 
