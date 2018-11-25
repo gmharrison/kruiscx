@@ -1,22 +1,9 @@
-.contact {
-  background-color: #3f464d;
-}
-
-.contentSection{
-  color: white;
-  padding: 75px 0;
-
-  h2 {
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-}
+@import '../base.scss';
 
 .contactFormContainer {
   .contactInput {
     border-radius: 0;
-    border-bottom: 10px solid #ff57cc;
+    border-bottom: 10px solid $pink;
     margin-top: 15px;
     border-left: none;
     border-right: none;
@@ -47,7 +34,7 @@
     text-transform: uppercase;
     font-family: 'Oswald';
     color: white;
-    background-color: #ff57cc;
+    background-color: $pink;
     padding: 10px 15px;
     margin-top: 15px;
     border-radius: 0;

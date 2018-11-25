@@ -86,11 +86,7 @@ module.exports = {
 	plugins: [
         HTMLWebpackPluginConfig,
         new ExtractTextPlugin("styles.css"),
-        // OccurenceOrderPlugin is needed for webpack 1.x only
-        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        // Use NoErrorsPlugin for webpack 1.x
-        new webpack.NoEmitOnErrorsPlugin(),
         new webpack.DefinePlugin({
         'process.env': {
             'NODE_ENV': "'development'"

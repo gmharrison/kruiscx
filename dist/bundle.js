@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "ff3012fc93f89a108a00"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9d58e5538057466cd15d"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -1162,9 +1162,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(KruisApp, 'KruisApp', '/Users/gabrielle/Desktop/git/kruiscx/views/App.js');
+    __REACT_HOT_LOADER__.register(KruisApp, 'KruisApp', '/Users/gabrielle/Desktop/git/kruiscx/src/js/App.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/App.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/App.js');
 }();
 
 ;
@@ -18639,8 +18639,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -18659,56 +18657,35 @@ var _nav2 = _interopRequireDefault(_nav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Intro = function (_React$Component) {
-    _inherits(Intro, _React$Component);
-
-    function Intro() {
-        _classCallCheck(this, Intro);
-
-        return _possibleConstructorReturn(this, (Intro.__proto__ || Object.getPrototypeOf(Intro)).apply(this, arguments));
-    }
-
-    _createClass(Intro, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
+var Intro = function Intro() {
+    return _react2.default.createElement(
+        'div',
+        { className: _intro2.default.intro },
+        _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(_nav2.default, null),
+            _react2.default.createElement(
                 'div',
-                { className: _intro2.default.intro },
+                { className: 'row' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'container' },
-                    _react2.default.createElement(_nav2.default, null),
+                    { className: 'col-md-5 col-sm-7 col-xs-12 ' + _intro2.default.centeringHeader },
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: _intro2.default.header },
+                        _react2.default.createElement(_logo2.default, null),
                         _react2.default.createElement(
-                            'div',
-                            { className: 'col-md-5 col-sm-7 col-xs-12 ' + _intro2.default.centeringHeader },
-                            _react2.default.createElement(
-                                'div',
-                                { className: _intro2.default.header },
-                                _react2.default.createElement(_logo2.default, null),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: _intro2.default.subHeader },
-                                    'KruisCX is a cycling development team focused on introducing more people to the sport of road and cyclocross racing.'
-                                )
-                            )
+                            'p',
+                            { className: _intro2.default.subHeader },
+                            'KruisCX is a cycling development team focused on introducing more people to the sport of road and cyclocross racing.'
                         )
                     )
                 )
-            );
-        }
-    }]);
-
-    return Intro;
-}(_react2.default.Component);
+            )
+        )
+    );
+};
 
 var _default = Intro;
 exports.default = _default;
@@ -18719,9 +18696,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Intro, 'Intro', '/Users/gabrielle/Desktop/git/kruiscx/views/intro.js');
+    __REACT_HOT_LOADER__.register(Intro, 'Intro', '/Users/gabrielle/Desktop/git/kruiscx/src/js/intro.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/intro.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/intro.js');
 }();
 
 ;
@@ -18780,9 +18757,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielle/Desktop/git/kruiscx/static/img/logo.svg");
+  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielle/Desktop/git/kruiscx/src/img/logo.svg");
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielle/Desktop/git/kruiscx/static/img/logo.svg");
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielle/Desktop/git/kruiscx/src/img/logo.svg");
 }();
 
 ;
@@ -18792,7 +18769,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"intro":"intro_intro_177Bj","centeringHeader":"intro_centeringHeader_ggjti","header":"intro_header_3Wfbg","subHeader":"intro_subHeader_Y8Nq8"};
+module.exports = {"grayBackground":"intro_grayBackground_1rp_M","grayTextSection":"intro_grayTextSection_wH1wk","whiteTextSection":"intro_whiteTextSection_yqpqB","bodyText":"intro_bodyText_39y2P","intro":"intro_intro_1Abpw","centeringHeader":"intro_centeringHeader_1FRkF","header":"intro_header_Qx9x4","subHeader":"intro_subHeader_1UGQs"};
 
 /***/ }),
 /* 34 */
@@ -18811,8 +18788,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -18827,78 +18802,57 @@ var _navLogo2 = _interopRequireDefault(_navLogo);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Nav = function (_React$Component) {
-    _inherits(Nav, _React$Component);
-
-    function Nav() {
-        _classCallCheck(this, Nav);
-
-        return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
-    }
-
-    _createClass(Nav, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                { className: _nav2.default.nav },
+var Nav = function Nav() {
+    return _react2.default.createElement(
+        'div',
+        { className: _nav2.default.nav },
+        _react2.default.createElement(
+            'div',
+            { className: _nav2.default.navLogo },
+            _react2.default.createElement(_navLogo2.default, null)
+        ),
+        _react2.default.createElement(
+            'ul',
+            null,
+            _react2.default.createElement(
+                'li',
+                null,
                 _react2.default.createElement(
-                    'div',
-                    { className: _nav2.default.navLogo },
-                    _react2.default.createElement(_navLogo2.default, null)
-                ),
-                _react2.default.createElement(
-                    'ul',
-                    null,
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            'a',
-                            { href: '#about' },
-                            'About'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            'a',
-                            { href: '#team' },
-                            'Team'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            'a',
-                            { href: '#sponsors' },
-                            'Sponsors'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            'a',
-                            { href: '#contact' },
-                            'Contact'
-                        )
-                    )
+                    'a',
+                    { href: '#about' },
+                    'About'
                 )
-            );
-        }
-    }]);
-
-    return Nav;
-}(_react2.default.Component);
+            ),
+            _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                    'a',
+                    { href: '#team' },
+                    'Team'
+                )
+            ),
+            _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                    'a',
+                    { href: '#sponsors' },
+                    'Sponsors'
+                )
+            ),
+            _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                    'a',
+                    { href: '#contact' },
+                    'Contact'
+                )
+            )
+        )
+    );
+};
 
 var _default = Nav;
 exports.default = _default;
@@ -18909,9 +18863,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Nav, 'Nav', '/Users/gabrielle/Desktop/git/kruiscx/views/nav.js');
+    __REACT_HOT_LOADER__.register(Nav, 'Nav', '/Users/gabrielle/Desktop/git/kruiscx/src/js/nav.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/nav.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/nav.js');
 }();
 
 ;
@@ -18921,7 +18875,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"nav":"nav_nav_2oJf9","navLogo":"nav_navLogo_1xfJJ"};
+module.exports = {"nav":"nav_nav_3Z0Va","navLogo":"nav_navLogo_2NcsG"};
 
 /***/ }),
 /* 37 */
@@ -18977,9 +18931,9 @@ var _temp = function () {
     return;
   }
 
-  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielle/Desktop/git/kruiscx/static/img/nav-logo.svg");
+  __REACT_HOT_LOADER__.register(_objectWithoutProperties, "_objectWithoutProperties", "/Users/gabrielle/Desktop/git/kruiscx/src/img/nav-logo.svg");
 
-  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielle/Desktop/git/kruiscx/static/img/nav-logo.svg");
+  __REACT_HOT_LOADER__.register(_default, "default", "/Users/gabrielle/Desktop/git/kruiscx/src/img/nav-logo.svg");
 }();
 
 ;
@@ -18995,77 +18949,54 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _about = __webpack_require__(39);
+var _base = __webpack_require__(39);
 
-var _about2 = _interopRequireDefault(_about);
+var _base2 = _interopRequireDefault(_base);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var About = function (_React$Component) {
-    _inherits(About, _React$Component);
-
-    function About() {
-        _classCallCheck(this, About);
-
-        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
-    }
-
-    _createClass(About, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
+var About = function About() {
+    return _react2.default.createElement(
+        'div',
+        { id: 'about' },
+        _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
                 'div',
-                { id: 'about' },
+                { className: 'row' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'container' },
+                    { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: _base2.default.grayTextSection },
                         _react2.default.createElement(
-                            'div',
-                            { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: _about2.default.contentSection },
-                                _react2.default.createElement(
-                                    'h2',
-                                    null,
-                                    'About'
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: _about2.default.graySectionText },
-                                    'KruisCX was founded in 2013 so a group of close friends could race cyclocross together. Over the years, we have evolved into a team that races in nearly all disciplines, from road to cyclocross to mountain bike. Although members have come and gone, the core goal remains the same\u2014to have fun with friends on bikes.',
-                                    _react2.default.createElement('br', null),
-                                    _react2.default.createElement('br', null),
-                                    'Based in New York City, KruisCX targets a broad array of local road races, taking advantage of the proximity to training and racing in Prospect and Central Park. Cyclocross season sees team members traveling further afield to compete in the Mid-Atlantic, New Jersey, and Pennsylvania Cyclocross Series.',
-                                    _react2.default.createElement('br', null),
-                                    _react2.default.createElement('br', null),
-                                    'The 2018 race season brings a host of new changes. Along with an expanded Men\u2019s roster, KruisCX is doubling down on bringing more people of all backgrounds and identities into the sport by forming a Women\u2019s team. We are grateful to be supported by Sid\u2019s Bikes, one of our favorite bike shops in New York City, along with apparel suppliers VergeSport and Ridge Supply.'
-                                )
-                            )
+                            'h2',
+                            null,
+                            'About'
+                        ),
+                        _react2.default.createElement(
+                            'p',
+                            { className: _base2.default.bodyText },
+                            'KruisCX was founded in 2013 so a group of close friends could race cyclocross together. Over the years, we have evolved into a team that races in nearly all disciplines, from road to cyclocross to mountain bike. Although members have come and gone, the core goal remains the same\u2014to have fun with friends on bikes.',
+                            _react2.default.createElement('br', null),
+                            _react2.default.createElement('br', null),
+                            'Based in New York City, KruisCX targets a broad array of local road races, taking advantage of the proximity to training and racing in Prospect and Central Park. Cyclocross season sees team members traveling further afield to compete in the Mid-Atlantic, New Jersey, and Pennsylvania Cyclocross Series.',
+                            _react2.default.createElement('br', null),
+                            _react2.default.createElement('br', null),
+                            'The 2018 race season brings a host of new changes. Along with an expanded Men\u2019s roster, KruisCX is doubling down on bringing more people of all backgrounds and identities into the sport by forming a Women\u2019s team. We are grateful to be supported by Sid\u2019s Bikes, one of our favorite bike shops in New York City, along with apparel suppliers VergeSport and Ridge Supply.'
                         )
                     )
                 )
-            );
-        }
-    }]);
-
-    return About;
-}(_react2.default.Component);
+            )
+        )
+    );
+};
 
 var _default = About;
 exports.default = _default;
@@ -19076,9 +19007,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(About, 'About', '/Users/gabrielle/Desktop/git/kruiscx/views/about.js');
+    __REACT_HOT_LOADER__.register(About, 'About', '/Users/gabrielle/Desktop/git/kruiscx/src/js/about.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/about.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/about.js');
 }();
 
 ;
@@ -19088,7 +19019,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contentSection":"about_contentSection_11zXH","graySectionText":"about_graySectionText_Hj7ZJ"};
+module.exports = {"grayBackground":"base_grayBackground_2YG1g","grayTextSection":"base_grayTextSection_3NPY3","whiteTextSection":"base_whiteTextSection_2lHpj","bodyText":"base_bodyText_2H8XB"};
 
 /***/ }),
 /* 40 */
@@ -19129,10 +19060,8 @@ var Social = function (_React$Component) {
 
         _this.state = {
             instaData: [],
-            linkList: [],
-            pic2: []
+            imgList: []
         };
-
         return _this;
     }
 
@@ -19141,39 +19070,24 @@ var Social = function (_React$Component) {
         value: function componentDidMount() {
             var _this2 = this;
 
-            // 1. Outer Fetch call initiated here
-            fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=4").then(function (d) {
-                return d.json();
+            fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=4").then(function (data) {
+                return data.json();
             }).then(function (json) {
+                var listOfUrls = [];
+                var responseData = json.data;
 
-                // 2. array for storing url's retrieved from response
-                var urlArray = [];
-
-                for (var i = 0; i < json.data.length; i++) {
-                    // 3. Push url inside urlArray
-                    urlArray.push(json.data[i].link);
-                }
-
-                // 4. an array of urls
-                return urlArray;
-            }).then(function (urlArray) {
-
-                // Return an promise which will return "JSON response" array for all URLs.
-                return Promise.all(urlArray.map(function (url) {
-                    // Take url fetch response, return JSON response
-                    return fetch('https://api.instagram.com/oembed?url=' + url).then(function (f) {
-                        return f.json();
+                responseData.map(function (data) {
+                    listOfUrls.push(data.link);
+                });
+                return listOfUrls;
+            }).then(function (listOfUrls) {
+                return Promise.all(listOfUrls.map(function (url) {
+                    return fetch('https://api.instagram.com/oembed?url=' + url).then(function (data) {
+                        return data.json();
                     });
                 }));
-            }).then(function (f) {
-                // Store all objects into array for later use
-                var objArr = f;
-                var newArray = [];
-                for (var i = 0; i < objArr.length; i++) {
-                    var html = objArr[i];
-                    newArray.push(html);
-                }
-                _this2.setState({ linkList: newArray });
+            }).then(function (json) {
+                _this2.setState({ imgList: json });
             });
         }
     }, {
@@ -19198,17 +19112,17 @@ var Social = function (_React$Component) {
                 null,
                 'loading'
             );
-            var pictures = this.state.linkList.map(function (pic) {
+            var pictures = this.state.imgList.map(function (img) {
                 return _react2.default.createElement(
                     'div',
                     { className: _social2.default.imageContainer },
-                    _react2.default.createElement('div', { className: _social2.default.subFlex, dangerouslySetInnerHTML: { __html: pic.html } })
+                    _react2.default.createElement('div', { className: _social2.default.subFlex, dangerouslySetInnerHTML: { __html: img.html } })
                 );
             });
 
             return _react2.default.createElement(
                 'div',
-                { className: _social2.default.team },
+                { className: _social2.default.social },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -19217,10 +19131,10 @@ var Social = function (_React$Component) {
                         { className: 'row' },
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
+                            { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12' },
                             _react2.default.createElement(
                                 'div',
-                                { className: _social2.default.contentSection },
+                                { className: _social2.default.whiteTextSection },
                                 _react2.default.createElement(
                                     'div',
                                     { className: _social2.default.galleryContainer },
@@ -19246,9 +19160,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Social, 'Social', '/Users/gabrielle/Desktop/git/kruiscx/views/social.js');
+    __REACT_HOT_LOADER__.register(Social, 'Social', '/Users/gabrielle/Desktop/git/kruiscx/src/js/social.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/social.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/social.js');
 }();
 
 ;
@@ -19258,7 +19172,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"team":"social_team_jxxr2","contentSection":"social_contentSection_1WBut","galleryContainer":"social_galleryContainer_fxAGI","imageContainer":"social_imageContainer_3k0ew","subFlex":"social_subFlex_qaRAV","container":"social_container_2lXOD"};
+module.exports = {"grayBackground":"social_grayBackground_1BRBi","grayTextSection":"social_grayTextSection_1DzE6","whiteTextSection":"social_whiteTextSection_1UC6M","bodyText":"social_bodyText_2xOBx","social":"social_social_bLjH9","galleryContainer":"social_galleryContainer_nF0m3","imageContainer":"social_imageContainer_3xubE","subFlex":"social_subFlex_nCRlR","container":"social_container_1V8FO"};
 
 /***/ }),
 /* 42 */
@@ -19276,8 +19190,6 @@ module.exports = __webpack_require__.p + "team.png";
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = __webpack_require__(0);
 
@@ -19309,103 +19221,82 @@ var _skratch2 = _interopRequireDefault(_skratch);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Sponsors = function (_React$Component) {
-    _inherits(Sponsors, _React$Component);
-
-    function Sponsors() {
-        _classCallCheck(this, Sponsors);
-
-        return _possibleConstructorReturn(this, (Sponsors.__proto__ || Object.getPrototypeOf(Sponsors)).apply(this, arguments));
-    }
-
-    _createClass(Sponsors, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
+var Sponsors = function Sponsors() {
+    return _react2.default.createElement(
+        'div',
+        { id: 'sponsors' },
+        _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
                 'div',
-                { id: 'sponsors' },
+                { className: 'row' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'container' },
+                    { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: _sponsors2.default.grayTextSection },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Sponsors'
+                        ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
+                            { className: _sponsors2.default.logoContainer },
                             _react2.default.createElement(
                                 'div',
-                                { className: _sponsors2.default.contentSection },
+                                { className: _sponsors2.default.logo },
                                 _react2.default.createElement(
-                                    'h2',
-                                    null,
-                                    'Sponsors'
-                                ),
+                                    'a',
+                                    { href: 'https://www.sidsbikes.com/', target: '_blank' },
+                                    _react2.default.createElement('img', { src: _sids2.default })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: _sponsors2.default.logo },
                                 _react2.default.createElement(
-                                    'div',
-                                    { className: _sponsors2.default.logoContainer },
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: _sponsors2.default.logo },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://www.sidsbikes.com/', target: '_blank' },
-                                            _react2.default.createElement('img', { src: _sids2.default })
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: _sponsors2.default.logo },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://ridgesupplysocks.com' },
-                                            _react2.default.createElement('img', { src: _ridgesupply2.default })
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: _sponsors2.default.logo },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://www.vergesport.com/', target: '_blank' },
-                                            _react2.default.createElement('img', { src: _verge2.default })
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: _sponsors2.default.logo },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://www.instagram.com/coalitioncyclingclub/', target: '_blank' },
-                                            _react2.default.createElement('img', { src: _coalition2.default })
-                                        )
-                                    ),
-                                    _react2.default.createElement(
-                                        'div',
-                                        { className: _sponsors2.default.logo },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: 'https://www.skratchlabs.com/', target: '_blank' },
-                                            _react2.default.createElement('img', { src: _skratch2.default })
-                                        )
-                                    )
+                                    'a',
+                                    { href: 'https://ridgesupplysocks.com' },
+                                    _react2.default.createElement('img', { src: _ridgesupply2.default })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: _sponsors2.default.logo },
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: 'https://www.vergesport.com/', target: '_blank' },
+                                    _react2.default.createElement('img', { src: _verge2.default })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: _sponsors2.default.logo },
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: 'https://www.instagram.com/coalitioncyclingclub/', target: '_blank' },
+                                    _react2.default.createElement('img', { src: _coalition2.default })
+                                )
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: _sponsors2.default.logo },
+                                _react2.default.createElement(
+                                    'a',
+                                    { href: 'https://www.skratchlabs.com/', target: '_blank' },
+                                    _react2.default.createElement('img', { src: _skratch2.default })
                                 )
                             )
                         )
                     )
                 )
-            );
-        }
-    }]);
-
-    return Sponsors;
-}(_react2.default.Component);
+            )
+        )
+    );
+};
 
 var _default = Sponsors;
 exports.default = _default;
@@ -19416,9 +19307,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Sponsors, 'Sponsors', '/Users/gabrielle/Desktop/git/kruiscx/views/sponsors.js');
+    __REACT_HOT_LOADER__.register(Sponsors, 'Sponsors', '/Users/gabrielle/Desktop/git/kruiscx/src/js/sponsors.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/sponsors.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/sponsors.js');
 }();
 
 ;
@@ -19428,7 +19319,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contentSection":"sponsors_contentSection_27i5x","logoContainer":"sponsors_logoContainer_21Pxu","logo":"sponsors_logo_1pmeZ"};
+module.exports = {"grayBackground":"sponsors_grayBackground_3j6qT","grayTextSection":"sponsors_grayTextSection_3F1DL","whiteTextSection":"sponsors_whiteTextSection_jsf_D","bodyText":"sponsors_bodyText_1jJV7","logoContainer":"sponsors_logoContainer_3Pgkt","logo":"sponsors_logo_3PQrO"};
 
 /***/ }),
 /* 45 */
@@ -19514,7 +19405,7 @@ var Contact = function (_React$Component) {
 
             return _react2.default.createElement(
                 'div',
-                { id: 'contact', className: _contact2.default.contact },
+                { id: 'contact', className: _contact2.default.grayBackground },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
@@ -19526,7 +19417,7 @@ var Contact = function (_React$Component) {
                             { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
                             _react2.default.createElement(
                                 'div',
-                                { className: _contact2.default.contentSection },
+                                { className: _contact2.default.whiteTextSection },
                                 _react2.default.createElement(
                                     'h2',
                                     null,
@@ -19606,9 +19497,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Contact, 'Contact', '/Users/gabrielle/Desktop/git/kruiscx/views/contact.js');
+    __REACT_HOT_LOADER__.register(Contact, 'Contact', '/Users/gabrielle/Desktop/git/kruiscx/src/js/contact.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/contact.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/contact.js');
 }();
 
 ;
@@ -19618,7 +19509,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"contact":"contact_contact_1qMK2","contentSection":"contact_contentSection_1-uiA","contactFormContainer":"contact_contactFormContainer_3DAcE","contactInput":"contact_contactInput_Te3Sr","name":"contact_name_2DYPN","formCol":"contact_formCol_3d7x1","formColLeft":"contact_formColLeft_1CSmG","formColRight":"contact_formColRight_19Qa-","submitButton":"contact_submitButton_2DbGS","result":"contact_result_3tMiN","emoji":"contact_emoji_3w1Y9"};
+module.exports = {"grayBackground":"contact_grayBackground_ZXRUI","grayTextSection":"contact_grayTextSection_1Thdo","whiteTextSection":"contact_whiteTextSection_1Hw2F","bodyText":"contact_bodyText_sLSRT","contactFormContainer":"contact_contactFormContainer_2uSXe","contactInput":"contact_contactInput_2_427","name":"contact_name_clb6d","formCol":"contact_formCol_27sc5","formColLeft":"contact_formColLeft_19tOE","formColRight":"contact_formColRight_uB1-X","submitButton":"contact_submitButton_1O9TG","result":"contact_result_3XEnA","emoji":"contact_emoji_GKd_s"};
 
 /***/ }),
 /* 47 */
@@ -19706,9 +19597,9 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(Footer, 'Footer', '/Users/gabrielle/Desktop/git/kruiscx/views/footer.js');
+    __REACT_HOT_LOADER__.register(Footer, 'Footer', '/Users/gabrielle/Desktop/git/kruiscx/src/js/footer.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/footer.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/footer.js');
 }();
 
 ;
@@ -19718,7 +19609,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"footer":"footer_footer_zGyJk","socialLinks":"footer_socialLinks_22tx6"};
+module.exports = {"footer":"footer_footer_1Jzb7","socialLinks":"footer_socialLinks_18x1R"};
 
 /***/ }),
 /* 49 */
@@ -19737,8 +19628,6 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
@@ -19748,12 +19637,6 @@ var _team = __webpack_require__(51);
 var _team2 = _interopRequireDefault(_team);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var teamImages = [{
     id: 1,
@@ -19845,69 +19728,54 @@ var teamImages = [{
     name: "Peleg Rosenthal"
 }];
 
-var TeamGallery = function (_React$Component) {
-    _inherits(TeamGallery, _React$Component);
-
-    function TeamGallery() {
-        _classCallCheck(this, TeamGallery);
-
-        return _possibleConstructorReturn(this, (TeamGallery.__proto__ || Object.getPrototypeOf(TeamGallery)).apply(this, arguments));
-    }
-
-    _createClass(TeamGallery, [{
-        key: 'render',
-        value: function render() {
-            var profileBlock = teamImages.map(function (profile) {
-                return _react2.default.createElement(
-                    'div',
-                    { key: profile.id, className: _team2.default.teamMember },
-                    _react2.default.createElement(
-                        'div',
-                        { key: profile.id, className: _team2.default.circle },
-                        _react2.default.createElement('img', { key: profile.id, src: __webpack_require__(52)("./" + profile.path + '.png') })
-                    ),
-                    _react2.default.createElement(
-                        'p',
-                        null,
-                        profile.name
-                    )
-                );
-            });
-            return _react2.default.createElement(
+var TeamGallery = function TeamGallery() {
+    var profileBlock = teamImages.map(function (profile) {
+        return _react2.default.createElement(
+            'div',
+            { key: profile.id, className: _team2.default.teamMember },
+            _react2.default.createElement(
                 'div',
-                { id: 'team', className: _team2.default.team },
+                { key: profile.id, className: _team2.default.circle },
+                _react2.default.createElement('img', { key: profile.id, src: __webpack_require__(52)("./" + profile.path + '.png') })
+            ),
+            _react2.default.createElement(
+                'p',
+                null,
+                profile.name
+            )
+        );
+    });
+    return _react2.default.createElement(
+        'div',
+        { id: 'team', className: _team2.default.grayBackground },
+        _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+                'div',
+                { className: 'row' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'container' },
+                    { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'row' },
+                        { className: _team2.default.whiteTextSection },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            'Team'
+                        ),
                         _react2.default.createElement(
                             'div',
-                            { className: 'col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1' },
-                            _react2.default.createElement(
-                                'div',
-                                { className: _team2.default.contentSection },
-                                _react2.default.createElement(
-                                    'h2',
-                                    null,
-                                    'Team'
-                                ),
-                                _react2.default.createElement(
-                                    'div',
-                                    { className: _team2.default.teamContainer },
-                                    profileBlock
-                                )
-                            )
+                            { className: _team2.default.teamContainer },
+                            profileBlock
                         )
                     )
                 )
-            );
-        }
-    }]);
-
-    return TeamGallery;
-}(_react2.default.Component);
+            )
+        )
+    );
+};
 
 var _default = TeamGallery;
 exports.default = _default;
@@ -19918,11 +19786,11 @@ var _temp = function () {
         return;
     }
 
-    __REACT_HOT_LOADER__.register(TeamGallery, 'TeamGallery', '/Users/gabrielle/Desktop/git/kruiscx/views/team.js');
+    __REACT_HOT_LOADER__.register(teamImages, 'teamImages', '/Users/gabrielle/Desktop/git/kruiscx/src/js/team.js');
 
-    __REACT_HOT_LOADER__.register(teamImages, 'teamImages', '/Users/gabrielle/Desktop/git/kruiscx/views/team.js');
+    __REACT_HOT_LOADER__.register(TeamGallery, 'TeamGallery', '/Users/gabrielle/Desktop/git/kruiscx/src/js/team.js');
 
-    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/views/team.js');
+    __REACT_HOT_LOADER__.register(_default, 'default', '/Users/gabrielle/Desktop/git/kruiscx/src/js/team.js');
 }();
 
 ;
@@ -19932,7 +19800,7 @@ var _temp = function () {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"team":"team_team_3ReuT","contentSection":"team_contentSection_37GuA","circle":"team_circle_1oPs4","teamContainer":"team_teamContainer_2d7Bi","teamMember":"team_teamMember_GgsVw"};
+module.exports = {"grayBackground":"team_grayBackground_3Ltic","grayTextSection":"team_grayTextSection_2McZY","whiteTextSection":"team_whiteTextSection_3jeN8","bodyText":"team_bodyText_r3ozb","circle":"team_circle_1w_XY","teamContainer":"team_teamContainer_1p8kK","teamMember":"team_teamMember_1j8z6"};
 
 /***/ }),
 /* 52 */

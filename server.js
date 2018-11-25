@@ -53,10 +53,10 @@ if (isDeveloping) {
 }
 
 app.post('/form-submit', function(req, res){
-    const email = req.body.email
-    const name = req.body.name
-    const message = req.body.message
-    const data = req.body
+  const email = req.body.email
+  const name = req.body.name
+  const message = req.body.message
+  const data = req.body
 
   let transporter = nodeMailer.createTransport({
       host: 'smtp.gmail.com',

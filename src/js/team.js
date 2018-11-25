@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../static/css/components/team.scss'
+import styles from '../css/sections/team.scss'
 
 const teamImages = [
     {
@@ -93,33 +93,33 @@ const teamImages = [
     }
 ]
 
-export default class TeamGallery extends React.Component {
-    render (){
-        let profileBlock = teamImages.map((profile) => {
-            return (
-                <div key={profile.id} className={styles.teamMember}>
-                    <div key={profile.id} className={styles.circle}>
-                        <img key={profile.id} src={require(`../static/img/${profile.path}.png`)} />
-                    </div>
-                    <p>{profile.name}</p>
-                </div>
-            )
-        })
+const TeamGallery = () => {
+    const profileBlock = teamImages.map((profile) => {
         return (
-            <div id="team" className={styles.team}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                            <div className={styles.contentSection}>
-                                <h2>Team</h2>
-                                <div className={styles.teamContainer}>
-                                    {profileBlock}
-                                </div>
+            <div key={profile.id} className={styles.teamMember}>
+                <div key={profile.id} className={styles.circle}>
+                    <img key={profile.id} src={require(`../img/${profile.path}.png`)} />
+                </div>
+                <p>{profile.name}</p>
+            </div>
+        )
+    })
+    return (
+        <div id="team" className={styles.grayBackground}>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                        <div className={styles.whiteTextSection}>
+                            <h2>Team</h2>
+                            <div className={styles.teamContainer}>
+                                {profileBlock}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
+
+export default TeamGallery

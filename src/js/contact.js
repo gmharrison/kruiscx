@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../static/css/components/contact.scss'
+import styles from '../css/sections/contact.scss'
 
 
 export default class Contact extends React.Component {
@@ -39,11 +39,11 @@ export default class Contact extends React.Component {
 
     render() {
         return (
-            <div id="contact" className={styles.contact}>
+            <div id="contact" className={styles.grayBackground}>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                            <div className={styles.contentSection}>
+                            <div className={styles.whiteTextSection}>
                                 <h2>Contact</h2>
                                 <div className={styles.contactFormContainer}>
                                     <form onSubmit={this.handleSubmit} method="post">

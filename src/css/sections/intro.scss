@@ -1,5 +1,7 @@
+@import '../base.scss';
+
 .intro {
-  background-image: url('../../../static/img/intro.png');
+  background-image: url('../../../src/img/intro.png');
   background-size: cover;
   background-position: center, center;
 }
@@ -14,13 +16,10 @@
   margin: 75px 0 50px 0;
   text-align: center;
   color: white;
-  font-family: 'Roboto', sans-serif;
 }
 
 .subHeader {
   line-height: 2em;
-  font-size: 16px;
-  font-weight: 100;
   padding: 0 10px;
 }
 

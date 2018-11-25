@@ -1,0 +1,32 @@
+@import 'modules/variables';
+
+h2 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.grayBackground {
+  background-color: $gray;
+}
+
+.grayTextSection {
+  color: $gray;
+  padding: $section-padding 0;
+}
+
+.whiteTextSection {
+  color: $white;
+  padding: $section-padding 0;
+}
+
+.bodyText {
+  margin-top: 15px;
+  line-height: 1.8em;
+  font-weight: 300;
+}

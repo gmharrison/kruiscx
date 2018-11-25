@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../static/css/components/social.scss'
+import styles from '../css/sections/social.scss'
 
 
 export default class Social extends React.Component {
@@ -7,52 +7,36 @@ export default class Social extends React.Component {
         super(props);
         this.state = {
             instaData: [],
-            linkList: [],
-            pic2: []
+            imgList: [],
         };
-
     }
 
     componentDidMount() {
-        // 1. Outer Fetch call initiated here
         fetch("https://api.instagram.com/v1/users/507139550/media/recent/?access_token=507139550.8b9e29b.787e198bb41649829b5f37586b65fc4d&count=4")
-         .then(d => {
-            return d.json()
+         .then(data => {
+            return data.json()
          })
          .then(json => {
+            let listOfUrls = []
+            const responseData = json.data
 
-            // 2. array for storing url's retrieved from response
-            var urlArray = []
-
-            for (var i=0; i < json.data.length; i++) {
-                // 3. Push url inside urlArray
-                urlArray.push(json.data[i].link)
-            }
-
-            // 4. an array of urls
-            return urlArray
+            responseData.map(data => {
+                listOfUrls.push(data.link)
+            })
+            return listOfUrls
          })
-         .then(urlArray => {
-
-            // Return an promise which will return "JSON response" array for all URLs.
-            return Promise.all(urlArray.map(url => {
-                // Take url fetch response, return JSON response
+         .then(listOfUrls => {
+            return Promise.all(listOfUrls.map(url => {
                 return fetch('https://api.instagram.com/oembed?url=' + url)
-                    .then(f => { return f.json() })
-            }
+                    .then(data => {
+                        return data.json()
+                    })
+                }
             ))
          })
-         .then(f => {
-            // Store all objects into array for later use
-            var objArr = f;
-            var newArray = [];
-            for (var i=0; i < objArr.length; i++) {
-                var html = objArr[i]
-                newArray.push(html)
-            }
-            this.setState({linkList: newArray})
+         .then(json => {
+            this.setState({imgList: json})
           })
-
     }
 
     componentWillMount () {
@@ -73,20 +57,20 @@ export default class Social extends React.Component {
 
     render() {
         if (!this.state.instaData) return <p>loading</p>
-        let pictures = this.state.linkList.map((pic) => {
+        let pictures = this.state.imgList.map((img) => {
             return (
             <div className={styles.imageContainer}>
-                 <div className={styles.subFlex} dangerouslySetInnerHTML={{__html: pic.html}} />
+                 <div className={styles.subFlex} dangerouslySetInnerHTML={{__html: img.html}} />
              </div>
             )
         })
 
         return (
-            <div className={styles.team}>
+            <div className={styles.social}>
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                            <div className={styles.contentSection}>
+                        <div className="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+                            <div className={styles.whiteTextSection}>
                                 <div className={styles.galleryContainer}>
                                     {pictures}
                                 </div>

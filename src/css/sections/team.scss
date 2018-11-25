@@ -1,17 +1,4 @@
-.team {
-  background-color: #3f464d;
-}
-
-.contentSection{
-  color: white;
-  padding: 75px 0;
-
-  h2 {
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-}
+@import '../base.scss';
 
 .circle {
   display: block;
@@ -19,12 +6,13 @@
   margin: 5px auto;
   width: 150px;
   height: 150px;
-  background: #ff57cc;
+  background: $pink;
   box-sizing: border-box;
   clip-path: circle(74px at center);
   -webkit-clip-path: circle(74px at center);
   -moz-clip-path: circle(74px at center);
 }
+
 .circle img {
   position: absolute;
   top: 2px;
@@ -47,7 +35,6 @@
   margin: 0 10px;
 
   p {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
   }
 }

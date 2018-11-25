@@ -1,18 +1,9 @@
-.team {
-  background-image: url('../../../static/img/team.png');
+@import '../base.scss';
+
+.social {
+  background-image: url('../../../src/img/team.png');
   background-size: cover;
   background-position: center, center;
-}
-
-.contentSection{
-  color: white;
-  padding: 75px 0;
-
-  h2 {
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    font-weight: bold;
-  }
 }
 
 .galleryContainer {
@@ -28,12 +19,16 @@
     .subFlex {
       display: flex;
     }
-
-    iframe {
-      width: auto !important;
-      flex: 1 !important;
-    }
   }
+}
+
+iframe {
+  width: 100% !important;
+  flex: 1 !important;
+}
+
+@media screen and (max-width: 768) {
+  min-width: 200px !important;
 }
 
 .galleryContainer::before, .container::after {
