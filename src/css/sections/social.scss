@@ -28,7 +28,9 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
-  min-width: 200px !important;
+  iframe {
+    min-width: 200px !important;
+  }
 }
 
 .galleryContainer::before, .container::after {

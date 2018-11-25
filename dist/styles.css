@@ -134,10 +134,14 @@ p {
     flex: 1; }
     .social_galleryContainer_nF0m3 .social_imageContainer_3xubE .social_subFlex_nCRlR {
       display: flex; }
-    .social_galleryContainer_nF0m3 .social_imageContainer_3xubE iframe {
-      width: 100% !important;
-      min-width: 200px !important;
-      flex: 1 !important; }
+
+iframe {
+  width: 100% !important;
+  flex: 1 !important; }
+
+@media screen and (max-width: 768px) {
+  iframe {
+    min-width: 200px !important; } }
 
 .social_galleryContainer_nF0m3::before, .social_container_1V8FO::after {
   content: '';
